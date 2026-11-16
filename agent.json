@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "app_id": "governance-evidence-template",
+  "organization": "replace-with-your-organization",
+  "canonical_url": "https://example.com",
+  "jurisdictions": ["eu", "us", "global"],
+  "risk_tier": "high_risk_candidate",
+  "oversight_mode": "article_14_human_in_the_loop",
+  "approvals_policy": "reporter_requires_chamber_review",
+  "sigil_badge_url": "https://vantages.app/api/sigil/governance-evidence.svg",
+  "verify_url": "https://vantages.app/showcase/governance-evidence"
+}

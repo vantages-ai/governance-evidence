@@ -1,0 +1,12 @@
+{
+  "schema": "vos.gbom.v1",
+  "app_id": "governance-evidence-template",
+  "generated_at": "2026-11-16T00:00:00Z",
+  "models": [],
+  "datasets": [],
+  "mcp_tools": [],
+  "negative_fact_disclosures": [
+    "NOT_CHECKED: Replace with live repository and endpoint inventory before submitting for Chamber review."
+  ],
+  "rfc8785_canonical_sha256": "PENDING_INITIAL_SCAN"
+}
