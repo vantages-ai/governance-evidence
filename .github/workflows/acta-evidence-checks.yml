@@ -1,0 +1,26 @@
+name: VOS Acta Evidence Checks (7/7)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify-governance-evidence:
+    name: checks 7/7
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Run deterministic 7/7 governance evidence checks
+        run: node scripts/verify-governance-evidence.mjs

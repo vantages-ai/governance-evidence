@@ -1,0 +1,28 @@
+{
+  "schema": "vos.risk_register.v1",
+  "app_id": "governance-evidence-template",
+  "status": "DRAFT_UNSEALED_TEMPLATE",
+  "frameworks": ["EU_AI_ACT_ART_9", "NIST_AI_RMF_1_0", "ISO_IEC_42001"],
+  "residual_risk_status": "PENDING_CHAMBER_REVIEW",
+  "risk_items": [
+    {
+      "risk_id": "RSK-ART09-001",
+      "category": "unauthorized_autonomous_execution",
+      "statutory_basis": "EU AI Act Art. 9 & Art. 14",
+      "severity": "high",
+      "mitigation_control": "Enforce four-eyes human oversight approval gate before state transition or deployment.",
+      "verification_status": "TEMPLATE_PLACEHOLDER"
+    },
+    {
+      "risk_id": "RSK-ART15-002",
+      "category": "runtime_manifest_or_model_drift",
+      "statutory_basis": "EU AI Act Art. 15",
+      "severity": "high",
+      "mitigation_control": "Verify RFC 8785 canonical digest at edge gateway and fail closed to VOIDED_ON_DRIFT on mismatch.",
+      "verification_status": "TEMPLATE_PLACEHOLDER"
+    }
+  ],
+  "negative_fact_disclosures": [
+    "NOT_CHECKED: Live adversarial red-teaming against production tenant payloads has not been executed in this starter template."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "vos.art14_oversight_log.v1",
+  "app_id": "governance-evidence-template",
+  "status": "DRAFT_UNSEALED_TEMPLATE",
+  "approvals_policy": "reporter_requires_chamber_review",
+  "docket_stage": "E1_INTAKE",
+  "signoffs": [
+    {
+      "signoff_id": "sig_art14_template_example",
+      "steward_id": "replace-with-steward-id",
+      "role_level": 40,
+      "role_label": "PARTNER_CHAMBER_REVIEWER",
+      "decision": "PENDING_HUMAN_REVIEW",
+      "timestamp": "2026-11-16T00:00:00Z",
+      "notes": "Replace with accredited Chamber reviewer decision prior to E5 PQC sealing."
+    }
+  ],
+  "negative_fact_disclosures": [
+    "NOT_CHECKED: No human steward cryptographic signature has been executed on this unsealed template."
+  ]
+}

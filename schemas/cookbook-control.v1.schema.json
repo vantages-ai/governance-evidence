@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vantages.app/schemas/cookbook-control.v1.schema.json",
+  "title": "VOS Acta Cookbook Control Manifest v1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schemaVersion",
+    "recipeId",
+    "recipeSlug",
+    "scanId",
+    "jurisdiction",
+    "sector",
+    "regulation",
+    "article",
+    "coreObligation",
+    "defaultNotChecked",
+    "mcpTools"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "vos.acta_cookbook_control.v1" },
+    "recipeId": { "type": "string", "minLength": 1 },
+    "recipeSlug": { "type": "string", "minLength": 1 },
+    "scanId": { "type": "string", "minLength": 1 },
+    "jurisdiction": { "type": "string", "enum": ["eu", "us", "global"] },
+    "sector": { "type": "string", "minLength": 1 },
+    "regulation": { "type": "string", "minLength": 1 },
+    "article": { "type": "string", "minLength": 1 },
+    "coreObligation": { "type": "string", "minLength": 1 },
+    "defaultNotChecked": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "mcpTools": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

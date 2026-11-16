@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vantages.app/schemas/gbom.v1.schema.json",
+  "title": "VOS Governance Bill of Materials (GBOM) v1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema",
+    "app_id",
+    "generated_at",
+    "models",
+    "datasets",
+    "mcp_tools",
+    "negative_fact_disclosures",
+    "rfc8785_canonical_sha256"
+  ],
+  "properties": {
+    "schema": { "const": "vos.gbom.v1" },
+    "app_id": { "type": "string", "minLength": 1 },
+    "generated_at": { "type": "string", "minLength": 1 },
+    "models": { "type": "array" },
+    "datasets": { "type": "array" },
+    "mcp_tools": { "type": "array" },
+    "negative_fact_disclosures": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 5 }
+    },
+    "rfc8785_canonical_sha256": { "type": "string", "minLength": 1 }
+  }
+}

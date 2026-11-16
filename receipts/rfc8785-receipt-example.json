@@ -1,0 +1,16 @@
+{
+  "schema": "vos.rfc8785_evidence_receipt.v1",
+  "status": "DRAFT_UNSEALED_TEMPLATE",
+  "app_id": "governance-evidence-template",
+  "seal_id": "PENDING_CHAMBER_SEAL",
+  "docket_stage": "E1_INTAKE",
+  "pqc_algorithm": "Ed25519+ML-DSA-65-NIST-FIPS-204",
+  "canonical_digest_algorithm": "RFC8785-SHA256",
+  "rfc8785_canonical_sha256": "PENDING_INITIAL_SCAN",
+  "proof_portal_url": "https://proof.vantages.app/seals/PENDING_CHAMBER_SEAL",
+  "sigil_badge_url": "https://vantages.app/api/sigil/governance-evidence.svg",
+  "anchoring_policy": "Court-admissible receipts for active Shared rooms are anchored in ai-Apps-Studio/vantages-governance-evidence/tenants/<room_id>/receipts/.",
+  "negative_fact_disclosures": [
+    "NOT_CHECKED: Template receipt only; cryptographic PQC counter-seal is minted solely upon E4 Article 14 approval and E5 Chamber settlement."
+  ]
+}
