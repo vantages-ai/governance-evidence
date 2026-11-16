@@ -106,8 +106,12 @@ runCheck("CHK-02", "gbom-negative-facts", () => {
   return { disclosures: gbom.negative_fact_disclosures.length };
 });
 
-// CHK-03: Annex IV & Art. 9 / NIST Risk Assessment templates
+// CHK-03: Annex IV, Art. 9 / NIST Risk Assessment templates & Architecture docs
 runCheck("CHK-03", "annex-iv-and-risk", () => {
+  const archDocsPath = path.join(REPO_ROOT, "docs/ARCHITECTURE-AND-WORKFLOW.md");
+  if (!fs.existsSync(archDocsPath) || fs.readFileSync(archDocsPath, "utf8").trim().length < 200) {
+    throw new Error("docs/ARCHITECTURE-AND-WORKFLOW.md is missing or too short");
+  }
   const annexPath = path.join(REPO_ROOT, "annex-iv/annex-iv-template.md");
   if (!fs.existsSync(annexPath) || fs.readFileSync(annexPath, "utf8").trim().length < 100) {
     throw new Error("annex-iv/annex-iv-template.md is missing or too short");
