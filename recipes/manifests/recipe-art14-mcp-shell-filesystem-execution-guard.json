@@ -1,0 +1,35 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART14-MCP-SHELL-FILESYSTEM-EXECUTION-GUARD",
+  "slug": "recipe-art14-mcp-shell-filesystem-execution-guard",
+  "title": "EU AI Act Article 14 & Article 15: MCP External Discovery, L402 API & Host Execution Boundary Interlock",
+  "family": "oversight",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 14 & Article 15",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 14-15",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 14",
+    "EU AI Act Art. 15",
+    "EU AI Act Art. 9"
+  ],
+  "coreObligation": "Agentic tool-calling pipelines must prevent unauthorized host mutation and require verified human authority for high-impact actions.",
+  "defaultNotChecked": [
+    "Downstream third-party SaaS API uptime and external rate-limit SLA enforcement",
+    "Physical workstation OS kernel sandboxing outside MCP transport container"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_verify_living_passport",
+      "description": "Verify target MCP server Proof Passport and manifest hash before tool invocation.",
+      "requiredParams": [
+        "appId",
+        "deployedManifestHash"
+      ]
+    }
+  ]
+}

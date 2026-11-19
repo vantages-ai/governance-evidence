@@ -1,0 +1,37 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART14-CLINICAL-OVERSIGHT",
+  "slug": "recipe-art14-clinical-oversight",
+  "title": "EU AI Act Article 14: Mandatory Human Oversight & Clinical Diagnostic Authority Boundaries",
+  "family": "oversight",
+  "sector": "Healthcare & MedTech",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 14 & Annex I / Annex III(5)(a)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689) & EU MDR 2017/745",
+    "citation": "Regulation (EU) 2024/1689 Art. 14",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 14",
+    "EU AI Act Annex III(5)(a)",
+    "MDR 2017/745 Crossover"
+  ],
+  "coreObligation": "Clinical AI decision-support systems must enable qualified clinicians to interpret, override, or halt automated recommendations.",
+  "defaultNotChecked": [
+    "Notified Body CE clinical evaluation under EU MDR 2017/745",
+    "Bedside medical hardware telemetry calibration"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_record_human_oversight",
+      "description": "Record clinician Article 14 review and override rationale.",
+      "requiredParams": [
+        "traceId",
+        "reviewerId",
+        "decision",
+        "rationale"
+      ]
+    }
+  ]
+}

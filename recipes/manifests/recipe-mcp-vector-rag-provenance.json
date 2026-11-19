@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART10-MCP-VECTOR-RAG-PROVENANCE",
+  "slug": "recipe-mcp-vector-rag-provenance",
+  "title": "Vector Database & RAG MCP (Qdrant, Pinecone, Milvus, Chroma) Citation Grounding & ACL Filter",
+  "family": "data_gov",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 10 & Article 13 (Transparency & Provision of Information)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 10 & Art. 13",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 10",
+    "EU AI Act Art. 13",
+    "EU AI Act Art. 15"
+  ],
+  "coreObligation": "Retrieval-Augmented Generation (RAG) connectors must prevent cross-role document leakage and verify that generated claims match retrieved source chunks.",
+  "defaultNotChecked": [
+    "Semantic drift from upstream embedding model version swap without re-indexing",
+    "OCR accuracy on handwritten scanned legacy PDFs prior to chunking"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_verify_citations",
+      "description": "Verify that RAG output claims are grounded in retrieved vector chunk SHA-256 digests.",
+      "requiredParams": [
+        "responseHash",
+        "citations",
+        "chunkHashes"
+      ]
+    }
+  ]
+}

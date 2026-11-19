@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-NYC-LL144-BIAS-AUDIT",
+  "slug": "recipe-nyc-ll144-bias-audit",
+  "title": "NYC Local Law 144 / EU AI Act Annex III: Automated Employment Decision Tool Bias Audits & Candidate Notice",
+  "family": "fairness",
+  "sector": "Employment & HRTech",
+  "primaryJurisdiction": "NYC",
+  "legalBasis": {
+    "article": "NYC Local Law 144 & EU AI Act Annex III Point 4",
+    "regulation": "NYC Admin. Code Sec. 20-871 & Regulation (EU) 2024/1689",
+    "citation": "6 RCNY Sec. 5-301 & EU AI Act Annex III(4)",
+    "effectiveDate": "2023-07-05"
+  },
+  "statutoryAnchors": [
+    "NYC Local Law 144",
+    "EU AI Act Annex III(4)",
+    "EU AI Act Art. 10"
+  ],
+  "coreObligation": "Employers and vendors must conduct annual independent bias audits and publish selection rate disparity metrics prior to AEDT deployment.",
+  "defaultNotChecked": [
+    "External CPA/Independent Legal Auditor statutory sign-off letter",
+    "Historical offline interview notes outside ingested recruitment dataset"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_verify_zk_selective_disclosure",
+      "description": "Verify demographic impact ratio parity without exposing raw applicant PII.",
+      "requiredParams": [
+        "circuitId",
+        "publicSignals",
+        "proof"
+      ]
+    }
+  ]
+}

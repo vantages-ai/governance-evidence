@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART10-MCP-ANALYTICS-BI-WAREHOUSE-KANON",
+  "slug": "recipe-mcp-analytics-bi-warehouse-kanon",
+  "title": "Data Warehouse & BI Analytics MCP (Snowflake, BigQuery, Databricks, DuckDB) k-Anonymity & Differential Privacy",
+  "family": "data_gov",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 10(5) & GDPR Article 89 (Statistical Safeguards)",
+    "regulation": "EU AI Act & GDPR",
+    "citation": "Regulation (EU) 2024/1689 Art. 10(5)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 10(5)",
+    "GDPR Art. 89",
+    "ISO/IEC 42001 A.7.3"
+  ],
+  "coreObligation": "Analytics and data-warehouse AI assistants must enforce k-anonymity thresholds so aggregate queries cannot single out natural persons.",
+  "defaultNotChecked": [
+    "External auxiliary dataset linkage attacks performed offline by adversaries",
+    "Legacy BI dashboard screenshots cached in email attachments"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_export_redaction_pack",
+      "description": "Verify k-anonymity threshold (`k >= 3`) on warehouse aggregate result sets.",
+      "requiredParams": [
+        "queryHash",
+        "minCohortSize",
+        "suppressedBucketsCount"
+      ]
+    }
+  ]
+}

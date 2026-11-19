@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART15-MCP-POSTGRES-SQL-READWRITE-GUARD",
+  "slug": "recipe-mcp-postgres-sql-readwrite-guard",
+  "title": "PostgreSQL, Supabase & D1 SQL MCP Read/Write Isolation &DDL Mutation Interlock",
+  "family": "security",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 15(4) & Article 12",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 15(4)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 15(4)",
+    "EU AI Act Art. 12",
+    "ISO/IEC 42001 A.6.2.6"
+  ],
+  "coreObligation": "Database-connected AI agents must prevent SQL injection, unauthorized schema alterations, and unbounded bulk table exfiltration.",
+  "defaultNotChecked": [
+    "Physical disk-level encryption at rest outside declared cloud RDS/D1 KMS policy",
+    "Direct DBA superuser console sessions bypassing MCP proxy"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_evaluate_action",
+      "description": "Validate SQL AST and enforce read-only vs write-gated execution policy.",
+      "requiredParams": [
+        "toolName",
+        "sqlDigest",
+        "operationType"
+      ]
+    }
+  ]
+}

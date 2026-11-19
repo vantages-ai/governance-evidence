@@ -1,0 +1,37 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART14-MULTI-AGENT-SWARM-DELEGATION-CONTAINMENT",
+  "slug": "recipe-eu-art14-multi-agent-swarm-delegation-containment",
+  "title": "Multi-Agent Swarms (AutoGen, CrewAI, LangGraph, Agents SDK): Proof-of-Agent-Authority & Recursion Cap",
+  "family": "oversight",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "GLOBAL",
+  "legalBasis": {
+    "article": "EU AI Act Art. 14/15 & Singapore IMDA Agentic AI Governance Framework (2025)",
+    "regulation": "Regulation (EU) 2024/1689 & IMDA Model AI Governance Framework for Agentic AI",
+    "citation": "Regulation (EU) 2024/1689 Art. 14 & Proof-of-Agent-Authority Spec",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 14",
+    "EU AI Act Art. 15",
+    "IMDA Agentic AI Framework Dimension 4"
+  ],
+  "coreObligation": "Multi-agent orchestrators must prevent unbounded recursive fan-out, privilege amplification across subagent handoffs, and orphan background mutations.",
+  "defaultNotChecked": [
+    "External third-party webhook endpoint availability outside swarm orchestrator",
+    "Human operator browser tab idle sleep timer"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_evaluate_action",
+      "description": "Validate multi-agent delegation hop depth, ownedAgentIds contract, and attenuated scope.",
+      "requiredParams": [
+        "parentAgentId",
+        "childAgentId",
+        "hopDepth",
+        "attenuatedScope"
+      ]
+    }
+  ]
+}

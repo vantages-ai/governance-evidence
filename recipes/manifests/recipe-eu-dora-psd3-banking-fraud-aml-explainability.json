@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-DORA-PSD3-BANKING-FRAUD-AML-EXPLAINABILITY",
+  "slug": "recipe-eu-dora-psd3-banking-fraud-aml-explainability",
+  "title": "Banking & FinTech: EU DORA (2022/2554), AMLR & EBA ICT Risk AI Fraud & AML Account-Freeze Guard",
+  "family": "security",
+  "sector": "Banking & FinTech",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "DORA Art. 5-16 (ICT Risk), GDPR Art. 22 & EU AI Act Art. 14/15",
+    "regulation": "Regulation (EU) 2022/2554 (DORA) & Regulation (EU) 2024/1689",
+    "citation": "Regulation (EU) 2022/2554 Art. 8 & EBA Guidelines on ICT Risk",
+    "effectiveDate": "2025-01-17"
+  },
+  "statutoryAnchors": [
+    "Regulation (EU) 2022/2554 (DORA)",
+    "EU AI Act Annex III 5(b)",
+    "GDPR Art. 22"
+  ],
+  "coreObligation": "Financial institutions under DORA and GDPR Art. 22 must ensure operational resilience of AI fraud/AML engines and provide human review for automated account lockouts.",
+  "defaultNotChecked": [
+    "FIU (Financial Intelligence Unit) classified SAR/STR law-enforcement tipping-off seal",
+    "SWIFT hardware HSM physical tamper sensor in clearing house"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_evaluate_action",
+      "description": "Gate automated account restriction behind DORA ICT resilience and human analyst escalation.",
+      "requiredParams": [
+        "transactionDigest",
+        "riskScore",
+        "escalationQueueId"
+      ]
+    }
+  ]
+}

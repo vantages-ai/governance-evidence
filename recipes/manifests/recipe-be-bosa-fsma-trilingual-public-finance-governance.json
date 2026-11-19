@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-BE-BOSA-FSMA-TRILINGUAL-PUBLIC-FINANCE-GOVERNANCE",
+  "slug": "recipe-be-bosa-fsma-trilingual-public-finance-governance",
+  "title": "Belgium FPS BOSA, FSMA/NBB & Book VI Economic Law Trilingual (NL/FR/DE) Public & Financial AI",
+  "family": "transparency",
+  "sector": "Public Sector & Utilities",
+  "primaryJurisdiction": "BE",
+  "legalBasis": {
+    "article": "EU AI Act Art. 27/50 & Belgian FPS BOSA / FSMA Algorithmic Guidelines",
+    "regulation": "Regulation (EU) 2024/1689 & Belgian Code of Economic Law",
+    "citation": "FPS BOSA Federal AI Framework & FSMA Consumer Protection Rules",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "FPS BOSA AI Circular",
+    "Belgian Code of Economic Law Book VI",
+    "EU AI Act Art. 27 & 50"
+  ],
+  "coreObligation": "AI systems deployed in Belgian public services or financial consumer interfaces must respect regional language laws (NL/FR/DE) and register FRIA oversight.",
+  "defaultNotChecked": [
+    "Crossroad Bank for Enterprises (BCE/KBO) notarized deed of incorporation",
+    "eID / Itsme hardware authentication session outside gateway"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "eu_ai_register_prepare_metadata",
+      "description": "Prepare Belgian FPS BOSA trilingual metadata and Article 27 FRIA package.",
+      "requiredParams": [
+        "bceNumber",
+        "languageRegion",
+        "systemName"
+      ]
+    }
+  ]
+}

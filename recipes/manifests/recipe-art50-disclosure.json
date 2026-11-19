@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART50-CONV-DISCLOSURE",
+  "slug": "recipe-art50-disclosure",
+  "title": "EU AI Act Article 50: Conversational AI Transparency & Identity Disclosure",
+  "family": "transparency",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 50(1) & 50(2)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 50(1)-(2)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 50(1)",
+    "EU AI Act Art. 50(2)",
+    "ISO/IEC 42001 A.9.3"
+  ],
+  "coreObligation": "Providers and deployers must ensure natural persons are informed at first interaction that they are interacting with an AI system.",
+  "defaultNotChecked": [
+    "National consumer-protection translations outside declared EU locale",
+    "Third-party downstream widget white-labeling overrides"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_create_evidence_record",
+      "description": "Emit RFC 8785 first-turn AI identity disclosure receipt.",
+      "requiredParams": [
+        "sessionId",
+        "disclosureTextHash",
+        "locale"
+      ]
+    }
+  ]
+}

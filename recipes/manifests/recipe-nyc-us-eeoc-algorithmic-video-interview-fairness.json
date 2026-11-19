@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-NYC-US-EEOC-ALGORITHMIC-VIDEO-INTERVIEW-FAIRNESS",
+  "slug": "recipe-nyc-us-eeoc-algorithmic-video-interview-fairness",
+  "title": "NYC Local Law 144, EEOC Title VII & EU AI Act Art. 5(1)(f): Video Interview, Voice & Workplace Emotion Ban",
+  "family": "fairness",
+  "sector": "Employment & HRTech",
+  "primaryJurisdiction": "NYC",
+  "legalBasis": {
+    "article": "EU AI Act Art. 5(1)(f) (Workplace Emotion Prohibition), NYC LL144 & 42 U.S.C. § 12112 (ADA)",
+    "regulation": "Regulation (EU) 2024/1689 Art. 5(1)(f) & NYC Admin. Code § 20-871",
+    "citation": "EU AI Act Art. 5(1)(f) & EEOC AI Technical Assistance (2023)",
+    "effectiveDate": "2025-02-02"
+  },
+  "statutoryAnchors": [
+    "NYC Local Law 144",
+    "EU AI Act Art. 5(1)(f)",
+    "EEOC Title VII & ADA Guidance"
+  ],
+  "coreObligation": "AI systems inferring emotions of natural persons in workplace and educational institutions are prohibited under EU AI Act Art. 5(1)(f) and subject to strict NYC/EEOC bias audits.",
+  "defaultNotChecked": [
+    "Human interviewer subjective unconscious bias during final in-person panel round",
+    "Candidate home broadband microphone hardware frequency response"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "proof_issue_refusal_receipt",
+      "description": "Block prohibited Article 5(1)(f) workplace emotion inference and emit refusal receipt.",
+      "requiredParams": [
+        "contextDomain",
+        "prohibitedFeature",
+        "requestId"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART5-PREDICTIVE-POLICING-SAFEGUARDS",
+  "slug": "recipe-art5-predictive-policing-safeguards",
+  "title": "EU AI Act Article 5(1)(d) & Article 14: Prohibited Predictive Policing Interlocks & Law Enforcement Governance",
+  "family": "risk",
+  "sector": "Public Sector & Utilities",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 5(1)(d) & Article 9",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 5(1)(d)",
+    "effectiveDate": "2025-02-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 5(1)(d)",
+    "EU AI Act Art. 14",
+    "EU AI Act Art. 9"
+  ],
+  "coreObligation": "AI systems assessing the risk of a natural person offending based solely on profiling or personality traits are strictly prohibited since Feb 2, 2025.",
+  "defaultNotChecked": [
+    "Judicial warrant validity under national criminal procedure code",
+    "Classified sovereign intelligence enclave physical custody"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "proof_issue_refusal_receipt",
+      "description": "Emit zero-debit cryptographic refusal receipt when prohibited Article 5 pattern is detected.",
+      "requiredParams": [
+        "policyId",
+        "prohibitedArticle",
+        "requestDigest"
+      ]
+    }
+  ]
+}

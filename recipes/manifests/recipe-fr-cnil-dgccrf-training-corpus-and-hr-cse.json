@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-FR-CNIL-DGCCRF-TRAINING-CORPUS-AND-HR-CSE",
+  "slug": "recipe-fr-cnil-dgccrf-training-corpus-and-hr-cse",
+  "title": "France CNIL AI Recommendations, Code du Travail L2312-8 (CSE) & DGCCRF Algorithmic Transparency",
+  "family": "data_gov",
+  "sector": "Employment & HRTech",
+  "primaryJurisdiction": "FR",
+  "legalBasis": {
+    "article": "CNIL AI Sheets 1-10, GDPR Art. 6/22 & EU AI Act Art. 10",
+    "regulation": "Loi Informatique et Libertes (No. 78-17) & Regulation (EU) 2024/1689",
+    "citation": "CNIL Referentiel IA (2024/2025) & Code du travail Art. L2312-8",
+    "effectiveDate": "2024-06-07"
+  },
+  "statutoryAnchors": [
+    "CNIL AI Recommendations 2024",
+    "Code du travail Art. L2312-8",
+    "EU AI Act Art. 10"
+  ],
+  "coreObligation": "Deployers and providers operating in France must document CNIL lawful basis for training data, honor opposition rights, and inform the CSE prior to workplace AI rollout.",
+  "defaultNotChecked": [
+    "Minutes of Social and Economic Committee (CSE) in-person deliberation meeting",
+    "CNIL prior authorization for biometric health research under Loi Informatique et Libertes Art. 66"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_map_governance_material",
+      "description": "Map corpus and workplace AI controls to CNIL AI Recommendations and GDPR Art. 6.",
+      "requiredParams": [
+        "systemId",
+        "lawfulBasis",
+        "cseNoticeIssued"
+      ]
+    }
+  ]
+}

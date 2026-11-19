@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-MDR-IVDR-CLINICAL-DECISION-SUPPORT-TRIAGE",
+  "slug": "recipe-eu-mdr-ivdr-clinical-decision-support-triage",
+  "title": "Healthcare & MedTech: EU AI Act Annex I/III, MDR 2017/745 & IVDR Clinical Decision Support Oversight",
+  "family": "oversight",
+  "sector": "Healthcare & MedTech",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "EU AI Act Art. 6(1), Art. 14 & MDR 2017/745 Annex I (GSPR)",
+    "regulation": "Regulation (EU) 2024/1689 & Medical Device Regulation (EU) 2017/745",
+    "citation": "Regulation (EU) 2024/1689 Art. 6(1) & MDR Rule 11",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 6(1) & Annex I",
+    "Regulation (EU) 2017/745 (MDR)",
+    "MDCG 2019-11 Software"
+  ],
+  "coreObligation": "AI medical software (SaMD) classifying patient risk or recommending treatment must enforce clinician-in-the-loop verification and post-market clinical follow-up logs.",
+  "defaultNotChecked": [
+    "Notified Body (e.g. TUV / BSI) physical wet-ink CE-mark technical file certificate",
+    "Bedside vital-sign hardware sensor electrical calibration"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_record_human_oversight",
+      "description": "Record attending clinician verification and override rationale for clinical AI recommendation.",
+      "requiredParams": [
+        "encounterId",
+        "clinicianLicenseHash",
+        "decisionOutcome"
+      ]
+    }
+  ]
+}

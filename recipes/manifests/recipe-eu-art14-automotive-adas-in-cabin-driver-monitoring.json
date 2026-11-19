@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART14-AUTOMOTIVE-ADAS-IN-CABIN-DRIVER-MONITORING",
+  "slug": "recipe-eu-art14-automotive-adas-in-cabin-driver-monitoring",
+  "title": "Automotive In-Cabin DMS & ADAS Handover: EU General Safety Regulation (GSR2 2019/2144) & EU AI Act Art. 5(1)(f) Exception",
+  "family": "oversight",
+  "sector": "Automotive & Mobility",
+  "primaryJurisdiction": "DE",
+  "legalBasis": {
+    "article": "EU AI Act Art. 5(1)(f) (Medical/Safety Exception), Art. 14 & Regulation (EU) 2019/2144 (GSR2)",
+    "regulation": "Regulation (EU) 2024/1689 & EU General Safety Regulation (GSR2)",
+    "citation": "Commission Delegated Regulation (EU) 2021/1341 (DDAW / ADDW)",
+    "effectiveDate": "2024-07-07"
+  },
+  "statutoryAnchors": [
+    "Regulation (EU) 2019/2144 (GSR2)",
+    "EU AI Act Art. 5(1)(f) Safety Exception",
+    "EU AI Act Art. 14"
+  ],
+  "coreObligation": "In-cabin fatigue detection falls under the safety exception of Art. 5(1)(f) only when strictly scoped to physical safety, processed on-device, and barred from commercial/HR profiling.",
+  "defaultNotChecked": [
+    "KBA / UTAC physical test-track braking distance homologation run",
+    "Aftermarket tinted windshield infrared transmittance variance"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_issue_seal",
+      "description": "Seal GSR2 safety-only purpose limitation and zero-egress in-cabin DMS manifest.",
+      "requiredParams": [
+        "vehiclePlatformId",
+        "onDeviceOnlyVerified",
+        "manifestHash"
+      ]
+    }
+  ]
+}

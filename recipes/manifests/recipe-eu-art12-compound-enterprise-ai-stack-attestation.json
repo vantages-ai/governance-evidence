@@ -1,0 +1,35 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART12-COMPOUND-ENTERPRISE-AI-STACK-ATTESTATION",
+  "slug": "recipe-eu-art12-compound-enterprise-ai-stack-attestation",
+  "title": "Compound AI Systems & Multi-Component Stacks: EU AI Act Art. 12/25 Supply-Chain Merkle Attestation & Drift Gate",
+  "family": "logging",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "GLOBAL",
+  "legalBasis": {
+    "article": "Article 12 & Article 25 (Responsibilities Along the AI Value Chain)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689) & ISO/IEC 42001 Annex A.10",
+    "citation": "Regulation (EU) 2024/1689 Art. 25",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 12",
+    "EU AI Act Art. 25 (Value Chain Responsibilities)",
+    "ISO/IEC 42001 A.10"
+  ],
+  "coreObligation": "Under Article 25, deployers and integrators assembling compound AI stacks must track component lineage across the AI value chain and detect upstream drift.",
+  "defaultNotChecked": [
+    "Upstream silicon foundry lithography mask physical provenance",
+    "Commercial MSA indemnity cap negotiation between enterprise legal teams"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_verify_living_passport",
+      "description": "Verify compound stack Merkle root and all constituent child Proof Passports.",
+      "requiredParams": [
+        "appId",
+        "deployedManifestHash"
+      ]
+    }
+  ]
+}

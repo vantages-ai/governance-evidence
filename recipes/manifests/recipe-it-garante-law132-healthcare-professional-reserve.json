@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-IT-GARANTE-LAW132-HEALTHCARE-PROFESSIONAL-RESERVE",
+  "slug": "recipe-it-garante-law132-healthcare-professional-reserve",
+  "title": "Italy National AI Law (DDL 132/2025), Garante Privacy & AgID Healthcare / Professional Reserve Oversight",
+  "family": "oversight",
+  "sector": "Healthcare & MedTech",
+  "primaryJurisdiction": "IT",
+  "legalBasis": {
+    "article": "Italian AI Law Art. 7 (Healthcare) & Art. 12 (Intellectual Professions) + EU AI Act Art. 14",
+    "regulation": "Italian Law on Artificial Intelligence (2025) & GDPR",
+    "citation": "DDL S.1146 / Law 132/2025 & Garante Provvedimento No. 9870832",
+    "effectiveDate": "2025-10-01"
+  },
+  "statutoryAnchors": [
+    "Italian AI Law (DDL IA 2025) Art. 7-14",
+    "Garante Privacy Provvedimenti",
+    "EU AI Act Art. 14"
+  ],
+  "coreObligation": "Under Italian AI Law, AI in healthcare and intellectual professions must serve strictly as auxiliary support, preserving exclusive human decision-making authority.",
+  "defaultNotChecked": [
+    "Regional Fascicolo Sanitario Elettronico (FSE 2.0) smart-card hardware token",
+    "Ordine dei Medici / Ordine degli Avvocati disciplinary bar registration lookup"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_record_human_oversight",
+      "description": "Record mandatory licensed professional human primacy sign-off under Italian AI Law.",
+      "requiredParams": [
+        "caseId",
+        "professionalId",
+        "auxiliaryAiDisclosureSent"
+      ]
+    }
+  ]
+}

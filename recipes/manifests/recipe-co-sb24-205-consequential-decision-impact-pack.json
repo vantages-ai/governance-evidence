@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-CO-SB24-205-CONSEQUENTIAL-DECISION-IMPACT-PACK",
+  "slug": "recipe-co-sb24-205-consequential-decision-impact-pack",
+  "title": "Colorado AI Act (SB 24-205 & SB 21-169): High-Risk Consequential Decision Impact Assessment & Adverse Notice",
+  "family": "fairness",
+  "sector": "Insurance & Underwriting",
+  "primaryJurisdiction": "CO",
+  "legalBasis": {
+    "article": "C.R.S. § 6-1-1702 (Developer Duties) & § 6-1-1703 (Deployer Impact Assessments)",
+    "regulation": "Colorado Consumer Protections for Artificial Intelligence Act (SB 24-205)",
+    "citation": "C.R.S. § 6-1-1701 et seq. & 3 CCR 702-10-1",
+    "effectiveDate": "2026-02-01"
+  },
+  "statutoryAnchors": [
+    "Colorado SB 24-205 (C.R.S. § 6-1-1701)",
+    "Colorado SB 21-169",
+    "EU AI Act Annex III(5)"
+  ],
+  "coreObligation": "Deployers of high-risk AI making consequential decisions (insurance, lending, health, housing, employment) must exercise reasonable care to prevent algorithmic discrimination.",
+  "defaultNotChecked": [
+    "Colorado Attorney General formal civil investigative demand legal representation",
+    "Historical paper underwriting guidelines prior to digital migration"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "insureai_get_adverse_template",
+      "description": "Generate Colorado SB 24-205 / SB 21-169 consequential decision notice and appeal workflow.",
+      "requiredParams": [
+        "useCaseId",
+        "jurisdiction",
+        "decisionFactors"
+      ]
+    }
+  ]
+}

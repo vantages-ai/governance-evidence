@@ -1,0 +1,14 @@
+{
+  "schema": "vos.chamber00_reference.v1",
+  "scanId": "vos-acta-execution-mcp",
+  "chamber": "chamber-00",
+  "recipeSlug": "recipe-art14-mcp-shell-filesystem-execution-guard",
+  "jurisdiction": "eu",
+  "diffUrn": "urn:vos:evidence:diff:37b2d2f7823e201b1a9ec6f125a07c42732998a69e2dfc68b9175d50be357a7a",
+  "checksStatus": "7/7 PASS",
+  "notChecked": [
+    "CLIENT_RUNTIME_SECRETS",
+    "PRODUCTION_LIVE_PII"
+  ],
+  "summary": "Article 14 human oversight execution guard for MCP tool calls."
+}

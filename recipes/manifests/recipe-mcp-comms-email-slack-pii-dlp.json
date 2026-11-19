@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART50-MCP-COMMS-EMAIL-SLACK-PII-DLP",
+  "slug": "recipe-mcp-comms-email-slack-pii-dlp",
+  "title": "Outbound Communications, Slack, Email, Discord & WhatsApp MCP PII Redaction & AI Disclosure",
+  "family": "transparency",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 50(1) & GDPR Article 32",
+    "regulation": "EU AI Act & GDPR",
+    "citation": "Regulation (EU) 2024/1689 Art. 50(1)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 50(1)",
+    "GDPR Art. 32",
+    "EU AI Act Art. 14"
+  ],
+  "coreObligation": "Autonomous communication agents must disclose their AI identity to recipients and prevent accidental PII or secret exfiltration.",
+  "defaultNotChecked": [
+    "Recipient offline screenshot forwarding after message delivery",
+    "End-to-end encrypted personal messaging apps outside enterprise tenant"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_export_redaction_pack",
+      "description": "Scan and redact outbound message payload for PII/credentials prior to dispatch.",
+      "requiredParams": [
+        "channel",
+        "recipientScope",
+        "payloadHash"
+      ]
+    }
+  ]
+}

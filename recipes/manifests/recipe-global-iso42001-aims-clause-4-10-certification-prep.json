@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-GLOBAL-ISO42001-AIMS-CLAUSE-4-10-CERTIFICATION-PREP",
+  "slug": "recipe-global-iso42001-aims-clause-4-10-certification-prep",
+  "title": "Global ISO/IEC 42001:2023 AIMS Clauses 4–10, Annex A Statement of Applicability (SoA) & Continuous Audit Pack",
+  "family": "logging",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "GLOBAL",
+  "legalBasis": {
+    "article": "ISO/IEC 42001:2023 Clauses 6.1.2 (Risk), 6.1.3 (Impact), 8 (Operation) & Annex A",
+    "regulation": "ISO/IEC 42001:2023 Information Technology — Artificial Intelligence — Management System",
+    "citation": "ISO/IEC 42001:2023 (First edition, 2023-12)",
+    "effectiveDate": "2023-12-18"
+  },
+  "statutoryAnchors": [
+    "ISO/IEC 42001:2023 Clauses 4-10",
+    "ISO/IEC 42001 Annex A.2-A.10",
+    "ISO/IEC 23894 Risk"
+  ],
+  "coreObligation": "Organizations operating an AI Management System (AIMS) must maintain a Statement of Applicability, perform AI system impact assessments, and log operational controls.",
+  "defaultNotChecked": [
+    "Stage-2 accredited certification body on-site physical office walkthrough",
+    "Board of Directors annual physical meeting minutes"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_generate_audit_pack",
+      "description": "Export ISO/IEC 42001:2023 Annex A Statement of Applicability and Clause 4-10 evidence bundle.",
+      "requiredParams": [
+        "organizationId",
+        "scope",
+        "includeSoA"
+      ]
+    }
+  ]
+}

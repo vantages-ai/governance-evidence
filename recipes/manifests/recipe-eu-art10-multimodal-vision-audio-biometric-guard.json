@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART10-MULTIMODAL-VISION-AUDIO-BIOMETRIC-GUARD",
+  "slug": "recipe-eu-art10-multimodal-vision-audio-biometric-guard",
+  "title": "Multimodal Vision, Audio & Biometric Categorization: EU AI Act Art. 5(1)(g), Art. 10 & Annex III(1) Interlock",
+  "family": "fairness",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 5(1)(g) (Prohibited Sensitive Biometric Categorization) & Annex III Point 1",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 5(1)(g) & Annex III(1)",
+    "effectiveDate": "2025-02-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 5(1)(g)-(h)",
+    "EU AI Act Annex III(1)",
+    "EU AI Act Art. 10"
+  ],
+  "coreObligation": "Biometric categorization systems inferring sensitive protected traits are prohibited since Feb 2, 2025, and permitted remote biometric verification requires strict liveness and human verification.",
+  "defaultNotChecked": [
+    "Judicial authorization warrant for targeted law-enforcement post-remote biometric identification",
+    "CCTV camera physical mounting angle on municipal streets"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "proof_issue_refusal_receipt",
+      "description": "Block prohibited Article 5(1)(g) sensitive biometric attribute inference and issue refusal receipt.",
+      "requiredParams": [
+        "modality",
+        "blockedAttributeClass",
+        "inputDigest"
+      ]
+    }
+  ]
+}

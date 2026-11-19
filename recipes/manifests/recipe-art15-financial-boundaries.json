@@ -1,0 +1,37 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART15-FINANCIAL-BOUNDARIES",
+  "slug": "recipe-art15-financial-boundaries",
+  "title": "EU AI Act Article 15: Decoupled Financial Authority & Execution Boundaries for Transaction Agents",
+  "family": "security",
+  "sector": "Banking & FinTech",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 15(1) & 15(4)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 15",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 15(1)",
+    "EU AI Act Art. 15(4)",
+    "EU AI Act Art. 9"
+  ],
+  "coreObligation": "High-risk and transactional AI systems must be resilient against prompt injection and unauthorized financial execution.",
+  "defaultNotChecked": [
+    "Physical host hardware side-channel resistance",
+    "Upstream foundation model weights adversarial pre-training provenance"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_evaluate_payable_authority",
+      "description": "Verify fiduciary ceiling and x402 quote clearance before executing financial tool call.",
+      "requiredParams": [
+        "agentId",
+        "amount",
+        "currency",
+        "scopeToken"
+      ]
+    }
+  ]
+}

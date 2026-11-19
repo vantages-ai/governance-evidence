@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-US-HIPAA-FDA-PCCPS-CLINICAL-RAG-PHI-ZERO-EGRESS",
+  "slug": "recipe-us-hipaa-fda-pccps-clinical-rag-phi-zero-egress",
+  "title": "US HIPAA Safe Harbor (45 CFR §164.514), FDA PCCP & ONC HTI-1 Clinical RAG PHI De-Identification & Audit",
+  "family": "data_gov",
+  "sector": "Healthcare & MedTech",
+  "primaryJurisdiction": "US",
+  "legalBasis": {
+    "article": "45 CFR § 164.514 (Safe Harbor De-Identification) & ONC HTI-1 b(11) Decision Support Interventions",
+    "regulation": "US HIPAA Privacy/Security Rule & HHS ONC HTI-1 Final Rule",
+    "citation": "45 CFR Parts 160, 164 & 170 (HTI-1 Effective Jan 2025)",
+    "effectiveDate": "2025-01-01"
+  },
+  "statutoryAnchors": [
+    "HIPAA 45 CFR § 164.514(b)",
+    "ONC HTI-1 DSI Rules (45 CFR § 170.315(b)(11))",
+    "FDA PCCP Guidance"
+  ],
+  "coreObligation": "US health systems and clinical AI vendors must prevent unconsented PHI egress to external LLMs and disclose ONC HTI-1 predictive intervention attributes.",
+  "defaultNotChecked": [
+    "Signed bilateral Business Associate Agreement (BAA) legal contract PDF",
+    "Hospital physical server room badge access logs"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_export_redaction_pack",
+      "description": "Scrub 18 HIPAA Safe Harbor PHI identifiers and emit ONC HTI-1 FAVES transparency card.",
+      "requiredParams": [
+        "datasetOrPromptDigest",
+        "hipaaSafeHarborMode",
+        "hti1Attributes"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "vos.chamber00_reference.v1",
+  "scanId": "cloudflare-emdash-kumo-stack",
+  "chamber": "chamber-00",
+  "recipeSlug": "recipe-art53-open-weights-gpai-provenance",
+  "jurisdiction": "eu",
+  "diffUrn": "urn:vos:evidence:diff:77a16e23b9d031548ef5202861a45bb31812e91244f0b2f638165aa0b15c929a",
+  "checksStatus": "7/7 PASS",
+  "notChecked": [
+    "CLIENT_RUNTIME_SECRETS",
+    "PRODUCTION_LIVE_PII"
+  ],
+  "summary": "Cloudflare Worker + EmDash CMS + Kumo UI GPAI provenance reference."
+}

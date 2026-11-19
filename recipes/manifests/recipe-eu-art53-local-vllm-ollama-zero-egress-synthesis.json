@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART53-LOCAL-VLLM-OLLAMA-ZERO-EGRESS-SYNTHESIS",
+  "slug": "recipe-eu-art53-local-vllm-ollama-zero-egress-synthesis",
+  "title": "Open-Weights Local Inference (Ollama, vLLM, TGI, llama.cpp): Sovereign Zero-Egress Synthesis & Weight Attestation",
+  "family": "gpai",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "EU AI Act Art. 15/53 & GDPR Art. 25 (Data Protection by Design and Default)",
+    "regulation": "Regulation (EU) 2024/1689 & GDPR",
+    "citation": "Regulation (EU) 2024/1689 Art. 53 & RFC 8785 Zero-Egress Proof",
+    "effectiveDate": "2025-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 53",
+    "EU AI Act Art. 15",
+    "GDPR Art. 25 & Art. 44 (Zero Third-Country Transfer)"
+  ],
+  "coreObligation": "Sovereign and air-gapped deployments using open-weights models must prove zero external data egress while attesting exact model weight provenance.",
+  "defaultNotChecked": [
+    "Air-gapped Faraday cage electromagnetic TEMPEST shielding certification",
+    "Local GPU power supply hardware wattage meter calibration"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_issue_pqc_seal",
+      "description": "Seal local zero-egress inference receipt (`sourceCodeEgressBytes: 0`) with ML-DSA-65 PQC signature.",
+      "requiredParams": [
+        "modelId",
+        "weightsSha256",
+        "sourceCodeEgressBytes"
+      ]
+    }
+  ]
+}

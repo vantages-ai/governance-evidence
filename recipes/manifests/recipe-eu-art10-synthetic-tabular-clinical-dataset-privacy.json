@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART10-SYNTHETIC-TABULAR-CLINICAL-DATASET-PRIVACY",
+  "slug": "recipe-eu-art10-synthetic-tabular-clinical-dataset-privacy",
+  "title": "European Health Data Space (EHDS), CNIL & EU AI Act Art. 10(5): Synthetic Clinical & Financial Tabular Dataset Privacy",
+  "family": "data_gov",
+  "sector": "Healthcare & MedTech",
+  "primaryJurisdiction": "FR",
+  "legalBasis": {
+    "article": "EU AI Act Art. 10(2)-(5) & EHDS Secondary Use Safeguards (Chapter IV)",
+    "regulation": "Regulation (EU) 2024/1689 & EHDS Regulation (EU) 2025/327",
+    "citation": "Regulation (EU) 2024/1689 Art. 10 & EHDS Art. 50",
+    "effectiveDate": "2025-03-26"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 10(5)",
+    "European Health Data Space (EHDS) Regulation",
+    "GDPR Art. 89"
+  ],
+  "coreObligation": "Synthetic datasets used for secondary health or financial AI training must prove resistance against patient/customer re-identification and membership inference.",
+  "defaultNotChecked": [
+    "Hospital Ethics Committee (IRB / CPP) clinical protocol wet-ink sign-off",
+    "Rare-disease genetic sequence familial pedigree external linkage"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_create_evidence_package",
+      "description": "Certify synthetic dataset membership-inference resistance and Croissant 1.0 provenance.",
+      "requiredParams": [
+        "datasetId",
+        "minDcrScore",
+        "croissantManifestHash"
+      ]
+    }
+  ]
+}

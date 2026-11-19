@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART10-MCP-NOSQL-KV-CACHE-GOVERNANCE",
+  "slug": "recipe-mcp-nosql-kv-cache-governance",
+  "title": "NoSQL, Redis, MongoDB & DynamoDB MCP TTL Retention & Tenant Key-Prefix Isolation",
+  "family": "data_gov",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 10 & GDPR Article 5(1)(e) Storage Limitation",
+    "regulation": "EU AI Act & Regulation (EU) 2016/679 (GDPR)",
+    "citation": "Regulation (EU) 2024/1689 Art. 10 & GDPR Art. 5",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 10",
+    "GDPR Art. 5(1)(e)",
+    "ISO/IEC 42001 A.7.4"
+  ],
+  "coreObligation": "AI memory stores and NoSQL connectors must enforce strict tenant namespace boundaries and deterministic retention TTLs.",
+  "defaultNotChecked": [
+    "Cross-region replica lag during emergency cache flush",
+    "Unmanaged client-side browser localStorage persistence"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_check",
+      "description": "Verify tenant namespace isolation and mandatory TTL configuration on NoSQL/KV bindings.",
+      "requiredParams": [
+        "bindingName",
+        "tenantPrefix",
+        "ttlSeconds"
+      ]
+    }
+  ]
+}

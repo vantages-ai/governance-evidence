@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART10-INSURANCE-UNDERWRITING",
+  "slug": "recipe-art10-insurance-underwriting",
+  "title": "EU AI Act Annex III 5(a) & Article 10: AI Insurance Risk Assessment, Telematics & Actuarial Fairness",
+  "family": "fairness",
+  "sector": "Insurance & Underwriting",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Annex III Point 5(c) & Article 10 / Colorado SB 21-169",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689) & 3 CCR 702-10",
+    "citation": "Regulation (EU) 2024/1689 Annex III(5)(c)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Annex III(5)(a)",
+    "EU AI Act Art. 10",
+    "Colorado SB 21-169"
+  ],
+  "coreObligation": "AI systems used for risk assessment and pricing in life and health insurance must eliminate unfair demographic proxy discrimination.",
+  "defaultNotChecked": [
+    "State Department of Insurance (DOI) rate-filing actuarial sign-off",
+    "Third-party telematics firmware sensor calibration"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "insureai_export_notarial_packet",
+      "description": "Export notarized actuarial fairness and adverse underwriting disclosure packet.",
+      "requiredParams": [
+        "useCaseId",
+        "policyId",
+        "jurisdiction"
+      ]
+    }
+  ]
+}

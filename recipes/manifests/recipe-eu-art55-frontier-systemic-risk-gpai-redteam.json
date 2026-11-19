@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART55-FRONTIER-SYSTEMIC-RISK-GPAI-REDTEAM",
+  "slug": "recipe-eu-art55-frontier-systemic-risk-gpai-redteam",
+  "title": "EU AI Act Article 55 & GPAI Code of Practice: Frontier Model Systemic Risk (>10^25 FLOPs) Adversarial Red-Teaming",
+  "family": "gpai",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 51 & Article 55 (Obligations for Providers of GPAI Models with Systemic Risk)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 55(1)",
+    "effectiveDate": "2025-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 51",
+    "EU AI Act Art. 55(1)(a)-(d)",
+    "EU GPAI Code of Practice"
+  ],
+  "coreObligation": "Providers of GPAI models with systemic risk must perform model evaluation, adversarial testing, cybersecurity protection of model weights, and incident reporting.",
+  "defaultNotChecked": [
+    "Classified CBRN national laboratory wet-bench synthesis testing",
+    "Submerged datacenter cooling water thermal discharge permit"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_run_stamp_phase2_analysis",
+      "description": "Execute STAMP Phase-2 adversarial systemic risk evaluation and generate Article 55 dossier.",
+      "requiredParams": [
+        "modelId",
+        "computeFlopsTier",
+        "adversarialSuiteDigest"
+      ]
+    }
+  ]
+}

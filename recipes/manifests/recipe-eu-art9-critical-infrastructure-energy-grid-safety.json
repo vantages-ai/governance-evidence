@@ -1,0 +1,37 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART9-CRITICAL-INFRASTRUCTURE-ENERGY-GRID-SAFETY",
+  "slug": "recipe-eu-art9-critical-infrastructure-energy-grid-safety",
+  "title": "EU AI Act Annex III Point 2 & NIS2: Critical Infrastructure, Smart Grid, Water & Utilities AI Safety Interlock",
+  "family": "risk",
+  "sector": "Public Sector & Utilities",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Annex III Point 2 (Critical Infrastructure) & Articles 9, 14, 15 + NIS2 Art. 21",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689) & NIS2 Directive",
+    "citation": "Regulation (EU) 2024/1689 Annex III(2)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Annex III(2)",
+    "EU AI Act Art. 9 & 15",
+    "Directive (EU) 2022/2555 (NIS2)"
+  ],
+  "coreObligation": "AI systems intended to be used as safety components in the management and operation of critical digital infrastructure, road traffic, or water/gas/heating/electricity supply are High-Risk.",
+  "defaultNotChecked": [
+    "Physical substation transformer oil dielectric breakdown",
+    "High-voltage transmission tower mechanical wind load fatigue"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "proof_issue_containment_receipt",
+      "description": "Halt out-of-envelope utility/infrastructure actuation and alert human dispatch.",
+      "requiredParams": [
+        "substationId",
+        "parameter",
+        "observedValue",
+        "safetyBound"
+      ]
+    }
+  ]
+}

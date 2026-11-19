@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART15-MCP-CLOUD-INFRA-K8S-TERRAFORM-GUARD",
+  "slug": "recipe-mcp-cloud-infra-k8s-terraform-guard",
+  "title": "Cloud Infrastructure, Kubernetes, Docker & Terraform MCP OPA Admission & Blast-Radius Guard",
+  "family": "security",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "DE",
+  "legalBasis": {
+    "article": "Article 15 & German BSI AIC4 / DIN SPEC 92001",
+    "regulation": "EU AI Act & BSI AI Cloud Service Compliance Criteria",
+    "citation": "Regulation (EU) 2024/1689 Art. 15 & BSI AIC4",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 15",
+    "BSI AIC4 Cloud Criteria",
+    "ISO/IEC 42001 A.6.2.5"
+  ],
+  "coreObligation": "Infrastructure-as-Code and cluster management agents must run dry-run plan evaluations and block destructive resource deletions.",
+  "defaultNotChecked": [
+    "Bare-metal hypervisor firmware BMC vulnerabilities at cloud hosting provider",
+    "Subsea fiber-optic physical route redundancy"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_evaluate_action",
+      "description": "Verify infrastructure plan diff and OPA admission policy before cluster mutation.",
+      "requiredParams": [
+        "clusterId",
+        "planDigest",
+        "destructiveResourcesCount"
+      ]
+    }
+  ]
+}

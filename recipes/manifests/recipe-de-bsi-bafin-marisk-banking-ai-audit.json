@@ -1,0 +1,37 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-DE-BSI-BAFIN-MARISK-BANKING-AI-AUDIT",
+  "slug": "recipe-de-bsi-bafin-marisk-banking-ai-audit",
+  "title": "Germany BaFin MaRisk AT 4.3.2, BSI AIC4 & Works Council (BetrVG §87) Banking & Enterprise AI Governance",
+  "family": "risk",
+  "sector": "Banking & FinTech",
+  "primaryJurisdiction": "DE",
+  "legalBasis": {
+    "article": "BaFin MaRisk AT 4.3.2, BSI AIC4 & EU AI Act Art. 9 / Annex III 5(b)",
+    "regulation": "German KWG / BaFin Supervisory Circular & Regulation (EU) 2024/1689",
+    "citation": "BaFin Circular 05/2023 (BA) MaRisk & BSI AIC4",
+    "effectiveDate": "2024-01-01"
+  },
+  "statutoryAnchors": [
+    "BaFin MaRisk AT 4.3.2",
+    "BSI AIC4",
+    "BetrVG Sec. 87(1) No. 6",
+    "EU AI Act Art. 9"
+  ],
+  "coreObligation": "German financial and enterprise deployers must document algorithmic model explainability for BaFin and prove zero unauthorized employee productivity surveillance under BetrVG.",
+  "defaultNotChecked": [
+    "Signed company-level Betriebsvereinbarung (Works Council collective agreement) wet-ink PDF",
+    "German Bundesbank physical cash-vault reconciliation"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_generate_audit_pack",
+      "description": "Compile BaFin MaRisk AT 4.3.2 & BSI AIC4 technical audit dossier.",
+      "requiredParams": [
+        "systemId",
+        "jurisdiction",
+        "includeWorksCouncilBoundary"
+      ]
+    }
+  ]
+}

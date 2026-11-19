@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART14-MCP-TICKETING-WORKFLOW-ESCALATION",
+  "slug": "recipe-mcp-ticketing-workflow-escalation",
+  "title": "Issue Tracking & Incident Workflow MCP (Jira, Linear, ServiceNow, PagerDuty) Human Triage Gate",
+  "family": "oversight",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 14 & Article 73 (Serious Incident Reporting)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 14 & Art. 73",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 14",
+    "EU AI Act Art. 73",
+    "NIST AI RMF MANAGE 4.1"
+  ],
+  "coreObligation": "Incident management agents must escalate severity-1 safety/compliance issues to human commanders and preserve statutory reporting timelines.",
+  "defaultNotChecked": [
+    "On-call engineer mobile carrier SMS paging delivery latency",
+    "Third-party status page DNS availability during global outage"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_record_human_oversight",
+      "description": "Require human incident commander approval before closing or downgrading P0/P1 tickets.",
+      "requiredParams": [
+        "ticketId",
+        "severity",
+        "approverId"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART12-MCP-DOCS-WORKSPACE-AUDIT-TRAIL",
+  "slug": "recipe-mcp-docs-workspace-audit-trail",
+  "title": "Enterprise Knowledge & Docs MCP (Notion, Confluence, Google Drive, SharePoint) Lineage & Mutation Log",
+  "family": "logging",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 12 (Record-Keeping)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 12",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 12",
+    "EU AI Act Art. 14",
+    "ISO/IEC 42001 A.8.4"
+  ],
+  "coreObligation": "AI systems modifying enterprise knowledge bases must maintain automatic, tamper-evident version logs of all synthetic edits.",
+  "defaultNotChecked": [
+    "Local desktop file exports edited offline in Microsoft Word",
+    "External guest link sharing enabled manually by workspace admins"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_submit_evidence_record",
+      "description": "Anchor pre-edit and post-edit document SHA-256 digests in tamper-evident ledger.",
+      "requiredParams": [
+        "documentId",
+        "beforeSha256",
+        "afterSha256",
+        "agentId"
+      ]
+    }
+  ]
+}

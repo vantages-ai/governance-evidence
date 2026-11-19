@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-UK-FCA-PRA-SS1-23-AISI-MODEL-RISK-GOVERNANCE",
+  "slug": "recipe-uk-fca-pra-ss1-23-aisi-model-risk-governance",
+  "title": "United Kingdom FCA Consumer Duty, Bank of England PRA SS1/23 Model Risk & UK AISI Frontier Safety",
+  "family": "risk",
+  "sector": "Banking & FinTech",
+  "primaryJurisdiction": "UK",
+  "legalBasis": {
+    "article": "PRA SS1/23 Principles 1-5, FCA PRIN 2A & UK GDPR Art. 22",
+    "regulation": "Bank of England PRA Supervisory Statement SS1/23 & FCA Handbook",
+    "citation": "PRA SS1/23 (May 2023) & UK DSIT AI White Paper Response (2024)",
+    "effectiveDate": "2024-05-17"
+  },
+  "statutoryAnchors": [
+    "PRA SS1/23 Model Risk Management",
+    "FCA Consumer Duty (PRIN 2A)",
+    "UK DSIT 5 Principles"
+  ],
+  "coreObligation": "UK financial firms must maintain a comprehensive model inventory, assign Senior Manager (SMF) accountability, and validate dynamic AI drift continuously.",
+  "defaultNotChecked": [
+    "Senior Managers and Certification Regime (SM&CR) individual FCA employment background check",
+    "London Stock Exchange physical matching engine colocation latency"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_record_executive_signoff",
+      "description": "Record UK SM&CR / PRA SS1/23 Principle 2 executive accountability sign-off.",
+      "requiredParams": [
+        "modelId",
+        "smfRole",
+        "manifestHash"
+      ]
+    }
+  ]
+}

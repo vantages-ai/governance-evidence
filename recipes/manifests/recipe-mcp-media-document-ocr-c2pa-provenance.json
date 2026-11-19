@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART50-MCP-MEDIA-DOCUMENT-OCR-C2PA-PROVENANCE",
+  "slug": "recipe-mcp-media-document-ocr-c2pa-provenance",
+  "title": "Document OCR, PDF Extraction & Media Processing MCP (FFmpeg, Whisper, Vision) C2PA & Integrity Attestation",
+  "family": "transparency",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 50(2) & Article 10",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 50(2)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 50(2)",
+    "EU AI Act Art. 10",
+    "C2PA 2.1 Standard"
+  ],
+  "coreObligation": "Media and document transformation pipelines must preserve cryptographic provenance and disclose synthetic edits or transcription confidence bounds.",
+  "defaultNotChecked": [
+    "Analog paper forgery prior to physical scanner ingestion",
+    "Lossy analog audio re-recording over airwaves"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_create_evidence_record",
+      "description": "Bind source document SHA-256 and C2PA provenance manifest to extracted structured output.",
+      "requiredParams": [
+        "sourceFileSha256",
+        "extractionConfidence",
+        "c2paStatus"
+      ]
+    }
+  ]
+}

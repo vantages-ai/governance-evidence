@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-US-NIST-RMF-OMB-M24-10-FEDERAL-ENTERPRISE-PACK",
+  "slug": "recipe-us-nist-rmf-omb-m24-10-federal-enterprise-pack",
+  "title": "United States NIST AI RMF 1.0, GenAI Profile (NIST AI 600-1) & FTC Section 5 Enterprise Assurance Pack",
+  "family": "risk",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "US",
+  "legalBasis": {
+    "article": "NIST AI RMF GOVERN 1.1, MAP 1.5, MEASURE 2.5, MANAGE 3.1 & 15 U.S.C. § 45",
+    "regulation": "NIST AI RMF 1.0 / NIST AI 600-1 & FTC Act Section 5",
+    "citation": "NIST AI 100-1 (Jan 2023) & NIST AI 600-1 (July 2024)",
+    "effectiveDate": "2024-07-26"
+  },
+  "statutoryAnchors": [
+    "NIST AI 100-1 (AI RMF 1.0)",
+    "NIST AI 600-1 GenAI Profile",
+    "FTC Act Section 5"
+  ],
+  "coreObligation": "US enterprise deployers and vendors must substantiate AI capability/safety claims with empirical MEASURE benchmarks and maintain GOVERN accountability.",
+  "defaultNotChecked": [
+    "FedRAMP High physical SCIF facility accreditation",
+    "State-by-state tort liability insurance policy underwriting limits"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_run_stamp_phase1_analysis",
+      "description": "Generate NIST AI RMF 1.0 GOVERN/MAP/MEASURE/MANAGE control crosswalk and gap matrix.",
+      "requiredParams": [
+        "systemId",
+        "profile",
+        "deploymentScope"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART53-MCP-BROWSER-PLAYWRIGHT-TDM-SCRAPING-GUARD",
+  "slug": "recipe-mcp-browser-playwright-tdm-scraping-guard",
+  "title": "Browser Automation, Playwright, Puppeteer & Web Scraping MCP TDM Opt-Out & SSRF Boundary",
+  "family": "gpai",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 53(1)(c) & DSM Directive Art. 4(3) TDM Reservation",
+    "regulation": "EU AI Act & Directive (EU) 2019/790",
+    "citation": "Regulation (EU) 2024/1689 Art. 53(1)(c)",
+    "effectiveDate": "2025-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 53(1)(c)",
+    "EU DSM Directive Art. 4(3)",
+    "EU AI Act Art. 15"
+  ],
+  "coreObligation": "Headless browser and web-scraping MCP tools must respect copyright TDM opt-out signals and block internal network SSRF traversal.",
+  "defaultNotChecked": [
+    "Dynamic JavaScript paywall terms of service modifications after page load",
+    "Third-party residential proxy IP reputation history"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "vos_browse_evidence_capture",
+      "description": "Capture web evidence with TDM reservation verification and SSRF egress filtering.",
+      "requiredParams": [
+        "url",
+        "title"
+      ]
+    }
+  ]
+}

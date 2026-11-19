@@ -1,0 +1,14 @@
+{
+  "schema": "vos.chamber00_reference.v1",
+  "scanId": "vos-verify-evidence-pack",
+  "chamber": "chamber-00",
+  "recipeSlug": "recipe-art15-autonomous-mobility",
+  "jurisdiction": "eu",
+  "diffUrn": "urn:vos:evidence:diff:8b58e478e0fd1a03e06bb33aab44de9b33c484e9a013db7ce48d4a391c23e365",
+  "checksStatus": "7/7 PASS",
+  "notChecked": [
+    "CLIENT_RUNTIME_SECRETS",
+    "PRODUCTION_LIVE_PII"
+  ],
+  "summary": "RFC 8785 and drift interlock evidence verification plugin."
+}

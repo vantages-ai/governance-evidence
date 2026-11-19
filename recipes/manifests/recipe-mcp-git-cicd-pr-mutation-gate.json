@@ -1,0 +1,37 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART14-MCP-GIT-CICD-PR-MUTATION-GATE",
+  "slug": "recipe-mcp-git-cicd-pr-mutation-gate",
+  "title": "GitHub, GitLab & Bitbucket MCP Pull Request Mutation, Branch Protection & Seal Drift Gate",
+  "family": "oversight",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 14 & Article 15 (Post-Deployment Drift Control)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 14 & Art. 15",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 14",
+    "EU AI Act Art. 15",
+    "ISO/IEC 42001 A.6.2.4"
+  ],
+  "coreObligation": "Coding and DevOps agents must not merge or deploy unreviewed code changes without explicit Article 14 human approval and seal re-verification.",
+  "defaultNotChecked": [
+    "Compromised developer workstation GPG/SSH hardware YubiKey physical theft",
+    "Third-party npm/PyPI upstream registry mirror outage"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_evaluate_rsi_proposal",
+      "description": "Evaluate code diff (`urn:vos:evidence:diff:...`) and require human sign-off before merge.",
+      "requiredParams": [
+        "repo",
+        "baseSha",
+        "headSha",
+        "diffHash"
+      ]
+    }
+  ]
+}

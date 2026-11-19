@@ -1,0 +1,14 @@
+{
+  "schema": "vos.chamber00_reference.v1",
+  "scanId": "sentinel-actuarial-risk-engine",
+  "chamber": "chamber-00",
+  "recipeSlug": "recipe-art15-financial-boundaries",
+  "jurisdiction": "eu",
+  "diffUrn": "urn:vos:evidence:diff:5e87a2d6be9023415ef41a3892391295b9a896cf13bc21e582847a61d15bf321",
+  "checksStatus": "7/7 PASS",
+  "notChecked": [
+    "CLIENT_RUNTIME_SECRETS",
+    "PRODUCTION_LIVE_PII"
+  ],
+  "summary": "Financial risk boundary and deterministic evidence gate."
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART15-AUTONOMOUS-MOBILITY",
+  "slug": "recipe-art15-autonomous-mobility",
+  "title": "EU AI Act Article 15 & Annex II: Autonomous Vehicle Sensor Fusion, Takeover Latency & Robustness",
+  "family": "security",
+  "sector": "Automotive & Mobility",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 15 & Annex I Section B",
+    "regulation": "EU AI Act & UNECE WP.29 R155/R156",
+    "citation": "Regulation (EU) 2024/1689 Art. 15 & Annex I",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 15",
+    "EU AI Act Annex II",
+    "UNECE WP.29 R155"
+  ],
+  "coreObligation": "Safety-critical mobility and robotics AI components must guarantee deterministic fail-safe fallback and adversarial sensor resilience.",
+  "defaultNotChecked": [
+    "Physical braking hydraulics and UNECE vehicle type-approval homologation",
+    "Real-time cellular V2X radio spectrum interference"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "proof_issue_containment_receipt",
+      "description": "Emit zero-debit containment receipt upon safety envelope violation.",
+      "requiredParams": [
+        "systemId",
+        "triggerCondition",
+        "fallbackState"
+      ]
+    }
+  ]
+}

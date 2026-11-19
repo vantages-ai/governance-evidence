@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART10-CREDIT-BIAS",
+  "slug": "recipe-art10-credit-bias",
+  "title": "EU AI Act Annex III 5(b) & Article 10: Credit Scoring Bias Audits & Protected Class Proxy Screening",
+  "family": "data_gov",
+  "sector": "Banking & FinTech",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 10 & Annex III Point 5(b)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689) & EBA GL/2021/02",
+    "citation": "Regulation (EU) 2024/1689 Annex III(5)(b)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 10",
+    "EU AI Act Annex III(5)(b)",
+    "EU AI Act Art. 13"
+  ],
+  "coreObligation": "Creditworthiness AI systems are classified as High-Risk under Annex III 5(b) and require bias-free training data and explainability.",
+  "defaultNotChecked": [
+    "Macroeconomic stress-testing capital adequacy under Basel III / CRR",
+    "Legacy bureau credit files prior to pipeline ingestion"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_generate_evidence_gap",
+      "description": "Evaluate Annex III 5(b) credit scoring feature proxy and explainability gaps.",
+      "requiredParams": [
+        "systemId",
+        "framework",
+        "features"
+      ]
+    }
+  ]
+}

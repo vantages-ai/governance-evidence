@@ -1,0 +1,14 @@
+{
+  "schema": "vos.chamber00_reference.v1",
+  "scanId": "acta-sovereign-notary-agent",
+  "chamber": "chamber-00",
+  "recipeSlug": "recipe-art14-mcp-shell-filesystem-execution-guard",
+  "jurisdiction": "eu",
+  "diffUrn": "urn:vos:evidence:diff:c6d482565f123681423de7e1ea7d5c9284ba5458319f3906a2e2ba5e9be75204",
+  "checksStatus": "7/7 PASS",
+  "notChecked": [
+    "CLIENT_RUNTIME_SECRETS",
+    "PRODUCTION_LIVE_PII"
+  ],
+  "summary": "Autonomous governance agent boundary and shell execution guard."
+}

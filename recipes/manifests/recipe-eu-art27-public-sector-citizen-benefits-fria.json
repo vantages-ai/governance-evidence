@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART27-PUBLIC-SECTOR-CITIZEN-BENEFITS-FRIA",
+  "slug": "recipe-eu-art27-public-sector-citizen-benefits-fria",
+  "title": "Public Sector & Welfare Eligibility: EU AI Act Art. 27 Fundamental Rights Impact Assessment (FRIA) & Annex III 5(a)",
+  "family": "fairness",
+  "sector": "Public Sector & Utilities",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 27 (Fundamental Rights Impact Assessment) & Annex III Point 5(a)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 27 & Art. 49(3)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 27",
+    "EU AI Act Annex III 5(a)",
+    "EU AI Act Art. 49 Registration"
+  ],
+  "coreObligation": "Public bodies and private entities providing public services must perform a Fundamental Rights Impact Assessment prior to deploying Annex III high-risk AI.",
+  "defaultNotChecked": [
+    "Parliamentary legislative budget appropriation vote",
+    "Municipal civil-registry paper archive birth certificate notarization"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "eu_ai_register_prepare_metadata",
+      "description": "Generate Article 27 FRIA assessment and Article 49/71 EU AI Database registration payload.",
+      "requiredParams": [
+        "authorityName",
+        "publicServiceDomain",
+        "friaCompleted"
+      ]
+    }
+  ]
+}

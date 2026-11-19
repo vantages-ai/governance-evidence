@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART12-MCP-OBSERVABILITY-LOGPUSH-HASH-CHAIN",
+  "slug": "recipe-mcp-observability-logpush-hash-chain",
+  "title": "Observability, OpenTelemetry, Sentry, Datadog & Cloudflare Logpush MCP Article 12 Hash-Chain",
+  "family": "logging",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 12, Article 19 & Article 26(6) (Minimum 6-Month Log Retention)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 12 & Art. 26(6)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 12",
+    "EU AI Act Art. 19",
+    "EU AI Act Art. 26(6)"
+  ],
+  "coreObligation": "High-risk AI systems must support automatic event logging throughout their lifetime and retain logs for at least 6 months.",
+  "defaultNotChecked": [
+    "Cold archival glacier tape physical facility fire suppression",
+    "Third-party SIEM UI role configuration outside Logpush sink"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "hdfl_verify_log_hash_chain",
+      "description": "Verify continuity and tamper-evidence of Article 12 forensic log hash chain.",
+      "requiredParams": [
+        "streamId",
+        "startSeq",
+        "endSeq"
+      ]
+    }
+  ]
+}

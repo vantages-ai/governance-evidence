@@ -1,0 +1,833 @@
+{
+  "schema": "vos.cookbook.catalog.v1",
+  "generatedAt": "2026-11-19T00:00:00.000Z",
+  "count": 55,
+  "recipes": [
+    {
+      "id": "RECIPE-EU-ART50-CONV-DISCLOSURE",
+      "slug": "recipe-art50-disclosure",
+      "title": "EU AI Act Article 50: Conversational AI Transparency & Identity Disclosure",
+      "family": "transparency",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 50(1) & 50(2)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 50(1)",
+        "EU AI Act Art. 50(2)",
+        "ISO/IEC 42001 A.9.3"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART15-FINANCIAL-BOUNDARIES",
+      "slug": "recipe-art15-financial-boundaries",
+      "title": "EU AI Act Article 15: Decoupled Financial Authority & Execution Boundaries for Transaction Agents",
+      "family": "security",
+      "sector": "Banking & FinTech",
+      "primaryJurisdiction": "EU",
+      "article": "Article 15(1) & 15(4)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 15(1)",
+        "EU AI Act Art. 15(4)",
+        "EU AI Act Art. 9"
+      ]
+    },
+    {
+      "id": "RECIPE-NYC-LL144-BIAS-AUDIT",
+      "slug": "recipe-nyc-ll144-bias-audit",
+      "title": "NYC Local Law 144 / EU AI Act Annex III: Automated Employment Decision Tool Bias Audits & Candidate Notice",
+      "family": "fairness",
+      "sector": "Employment & HRTech",
+      "primaryJurisdiction": "NYC",
+      "article": "NYC Local Law 144 & EU AI Act Annex III Point 4",
+      "regulation": "NYC Admin. Code Sec. 20-871 & Regulation (EU) 2024/1689",
+      "statutoryAnchors": [
+        "NYC Local Law 144",
+        "EU AI Act Annex III(4)",
+        "EU AI Act Art. 10"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART14-CLINICAL-OVERSIGHT",
+      "slug": "recipe-art14-clinical-oversight",
+      "title": "EU AI Act Article 14: Mandatory Human Oversight & Clinical Diagnostic Authority Boundaries",
+      "family": "oversight",
+      "sector": "Healthcare & MedTech",
+      "primaryJurisdiction": "EU",
+      "article": "Article 14 & Annex I / Annex III(5)(a)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689) & EU MDR 2017/745",
+      "statutoryAnchors": [
+        "EU AI Act Art. 14",
+        "EU AI Act Annex III(5)(a)",
+        "MDR 2017/745 Crossover"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART10-CREDIT-BIAS",
+      "slug": "recipe-art10-credit-bias",
+      "title": "EU AI Act Annex III 5(b) & Article 10: Credit Scoring Bias Audits & Protected Class Proxy Screening",
+      "family": "data_gov",
+      "sector": "Banking & FinTech",
+      "primaryJurisdiction": "EU",
+      "article": "Article 10 & Annex III Point 5(b)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689) & EBA GL/2021/02",
+      "statutoryAnchors": [
+        "EU AI Act Art. 10",
+        "EU AI Act Annex III(5)(b)",
+        "EU AI Act Art. 13"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART10-INSURANCE-UNDERWRITING",
+      "slug": "recipe-art10-insurance-underwriting",
+      "title": "EU AI Act Annex III 5(a) & Article 10: AI Insurance Risk Assessment, Telematics & Actuarial Fairness",
+      "family": "fairness",
+      "sector": "Insurance & Underwriting",
+      "primaryJurisdiction": "EU",
+      "article": "Annex III Point 5(c) & Article 10 / Colorado SB 21-169",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689) & 3 CCR 702-10",
+      "statutoryAnchors": [
+        "EU AI Act Annex III(5)(a)",
+        "EU AI Act Art. 10",
+        "Colorado SB 21-169"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART15-AUTONOMOUS-MOBILITY",
+      "slug": "recipe-art15-autonomous-mobility",
+      "title": "EU AI Act Article 15 & Annex II: Autonomous Vehicle Sensor Fusion, Takeover Latency & Robustness",
+      "family": "security",
+      "sector": "Automotive & Mobility",
+      "primaryJurisdiction": "EU",
+      "article": "Article 15 & Annex I Section B",
+      "regulation": "EU AI Act & UNECE WP.29 R155/R156",
+      "statutoryAnchors": [
+        "EU AI Act Art. 15",
+        "EU AI Act Annex II",
+        "UNECE WP.29 R155"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART14-PUBLIC-SECTOR-OVERSIGHT",
+      "slug": "recipe-art14-public-sector-oversight",
+      "title": "EU AI Act Article 14 & Annex III Point 5(a): Public Sector Benefits, Welfare Fraud Profiling & Due Process",
+      "family": "oversight",
+      "sector": "Public Sector & Utilities",
+      "primaryJurisdiction": "EU",
+      "article": "Article 14, Article 27 (FRIA) & Annex III Point 5(a)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 14",
+        "EU AI Act Art. 27 FRIA",
+        "EU AI Act Art. 71"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART5-PREDICTIVE-POLICING-SAFEGUARDS",
+      "slug": "recipe-art5-predictive-policing-safeguards",
+      "title": "EU AI Act Article 5(1)(d) & Article 14: Prohibited Predictive Policing Interlocks & Law Enforcement Governance",
+      "family": "risk",
+      "sector": "Public Sector & Utilities",
+      "primaryJurisdiction": "EU",
+      "article": "Article 5(1)(d) & Article 9",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 5(1)(d)",
+        "EU AI Act Art. 14",
+        "EU AI Act Art. 9"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART53-OPEN-WEIGHTS-GPAI-PROVENANCE",
+      "slug": "recipe-art53-open-weights-gpai-provenance",
+      "title": "EU AI Act Article 53(1)(c)-(d): Open-Weights & Embedding Model Training Summary & Copyright Provenance",
+      "family": "gpai",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 53(1)(c) & 53(1)(d)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 53(1)(c)",
+        "EU AI Act Art. 53(1)(d)",
+        "EU AI Act Art. 51"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART10-HF-DATASET-TDM-PII-GOVERNANCE",
+      "slug": "recipe-art10-hf-dataset-tdm-pii-governance",
+      "title": "EU AI Act Article 10 & Article 53: Hugging Face Dataset TDM Opt-Out, PII Scrubbing & Benchmark Provenance",
+      "family": "data_gov",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 10(2)-(5) & DSM Directive Art. 4",
+      "regulation": "EU AI Act & Directive (EU) 2019/790",
+      "statutoryAnchors": [
+        "EU AI Act Art. 10(2)-(5)",
+        "EU AI Act Art. 53(1)(c)",
+        "EU DSM Directive Art. 4 TDM"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART14-MCP-SHELL-FILESYSTEM-EXECUTION-GUARD",
+      "slug": "recipe-art14-mcp-shell-filesystem-execution-guard",
+      "title": "EU AI Act Article 14 & Article 15: MCP External Discovery, L402 API & Host Execution Boundary Interlock",
+      "family": "oversight",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 14 & Article 15",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 14",
+        "EU AI Act Art. 15",
+        "EU AI Act Art. 9"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART50-INTERACTIVE-HF-SPACE-AGENT-DISCLOSURE",
+      "slug": "recipe-art50-interactive-hf-space-agent-disclosure",
+      "title": "EU AI Act Article 50 & Article 14: Interactive Hugging Face Space & Generative Media Sandbox Disclosure",
+      "family": "transparency",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 50(1)-(4)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 50(1)",
+        "EU AI Act Art. 50(2)",
+        "EU AI Act Art. 14"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART15-MCP-POSTGRES-SQL-READWRITE-GUARD",
+      "slug": "recipe-mcp-postgres-sql-readwrite-guard",
+      "title": "PostgreSQL, Supabase & D1 SQL MCP Read/Write Isolation &DDL Mutation Interlock",
+      "family": "security",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 15(4) & Article 12",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 15(4)",
+        "EU AI Act Art. 12",
+        "ISO/IEC 42001 A.6.2.6"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART10-MCP-NOSQL-KV-CACHE-GOVERNANCE",
+      "slug": "recipe-mcp-nosql-kv-cache-governance",
+      "title": "NoSQL, Redis, MongoDB & DynamoDB MCP TTL Retention & Tenant Key-Prefix Isolation",
+      "family": "data_gov",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 10 & GDPR Article 5(1)(e) Storage Limitation",
+      "regulation": "EU AI Act & Regulation (EU) 2016/679 (GDPR)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 10",
+        "GDPR Art. 5(1)(e)",
+        "ISO/IEC 42001 A.7.4"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART10-MCP-VECTOR-RAG-PROVENANCE",
+      "slug": "recipe-mcp-vector-rag-provenance",
+      "title": "Vector Database & RAG MCP (Qdrant, Pinecone, Milvus, Chroma) Citation Grounding & ACL Filter",
+      "family": "data_gov",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 10 & Article 13 (Transparency & Provision of Information)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 10",
+        "EU AI Act Art. 13",
+        "EU AI Act Art. 15"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART14-MCP-GIT-CICD-PR-MUTATION-GATE",
+      "slug": "recipe-mcp-git-cicd-pr-mutation-gate",
+      "title": "GitHub, GitLab & Bitbucket MCP Pull Request Mutation, Branch Protection & Seal Drift Gate",
+      "family": "oversight",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 14 & Article 15 (Post-Deployment Drift Control)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 14",
+        "EU AI Act Art. 15",
+        "ISO/IEC 42001 A.6.2.4"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART15-MCP-CLOUD-INFRA-K8S-TERRAFORM-GUARD",
+      "slug": "recipe-mcp-cloud-infra-k8s-terraform-guard",
+      "title": "Cloud Infrastructure, Kubernetes, Docker & Terraform MCP OPA Admission & Blast-Radius Guard",
+      "family": "security",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "DE",
+      "article": "Article 15 & German BSI AIC4 / DIN SPEC 92001",
+      "regulation": "EU AI Act & BSI AI Cloud Service Compliance Criteria",
+      "statutoryAnchors": [
+        "EU AI Act Art. 15",
+        "BSI AIC4 Cloud Criteria",
+        "ISO/IEC 42001 A.6.2.5"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART53-MCP-BROWSER-PLAYWRIGHT-TDM-SCRAPING-GUARD",
+      "slug": "recipe-mcp-browser-playwright-tdm-scraping-guard",
+      "title": "Browser Automation, Playwright, Puppeteer & Web Scraping MCP TDM Opt-Out & SSRF Boundary",
+      "family": "gpai",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 53(1)(c) & DSM Directive Art. 4(3) TDM Reservation",
+      "regulation": "EU AI Act & Directive (EU) 2019/790",
+      "statutoryAnchors": [
+        "EU AI Act Art. 53(1)(c)",
+        "EU DSM Directive Art. 4(3)",
+        "EU AI Act Art. 15"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART13-MCP-SEARCH-KNOWLEDGE-GROUNDING",
+      "slug": "recipe-mcp-search-knowledge-grounding",
+      "title": "Web Search, Research & Knowledge Discovery MCP (Exa, Tavily, Brave, ArXiv) Source Corroboration",
+      "family": "transparency",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 13 & Article 50",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 13",
+        "EU AI Act Art. 50",
+        "NIST AI RMF MEASURE 2.5"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART50-MCP-COMMS-EMAIL-SLACK-PII-DLP",
+      "slug": "recipe-mcp-comms-email-slack-pii-dlp",
+      "title": "Outbound Communications, Slack, Email, Discord & WhatsApp MCP PII Redaction & AI Disclosure",
+      "family": "transparency",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 50(1) & GDPR Article 32",
+      "regulation": "EU AI Act & GDPR",
+      "statutoryAnchors": [
+        "EU AI Act Art. 50(1)",
+        "GDPR Art. 32",
+        "EU AI Act Art. 14"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART10-MCP-CRM-ERP-CUSTOMER-PROFILING-GUARD",
+      "slug": "recipe-mcp-crm-erp-customer-profiling-guard",
+      "title": "CRM, ERP & Revenue MCP (Salesforce, HubSpot, Zendesk, Shopify) Profiling & Consent Boundary",
+      "family": "data_gov",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 10 & GDPR Article 22 (Automated Profiling)",
+      "regulation": "EU AI Act & GDPR",
+      "statutoryAnchors": [
+        "EU AI Act Art. 10",
+        "GDPR Art. 22",
+        "Colorado SB 24-205"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART12-MCP-DOCS-WORKSPACE-AUDIT-TRAIL",
+      "slug": "recipe-mcp-docs-workspace-audit-trail",
+      "title": "Enterprise Knowledge & Docs MCP (Notion, Confluence, Google Drive, SharePoint) Lineage & Mutation Log",
+      "family": "logging",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 12 (Record-Keeping)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 12",
+        "EU AI Act Art. 14",
+        "ISO/IEC 42001 A.8.4"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART14-MCP-TICKETING-WORKFLOW-ESCALATION",
+      "slug": "recipe-mcp-ticketing-workflow-escalation",
+      "title": "Issue Tracking & Incident Workflow MCP (Jira, Linear, ServiceNow, PagerDuty) Human Triage Gate",
+      "family": "oversight",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 14 & Article 73 (Serious Incident Reporting)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 14",
+        "EU AI Act Art. 73",
+        "NIST AI RMF MANAGE 4.1"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART15-MCP-IAM-OAUTH-VAULT-ZERO-SECRET-GUARD",
+      "slug": "recipe-mcp-iam-oauth-vault-zero-secret-guard",
+      "title": "Identity, OAuth2, Okta, Auth0 & Vault MCP Scope Attenuation & Zero-Secret Exposure Guard",
+      "family": "security",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 15 (Cybersecurity & Resilience)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 15",
+        "ISO/IEC 42001 A.6.2.6",
+        "NIST AI RMF GOVERN 1.2"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART12-MCP-OBSERVABILITY-LOGPUSH-HASH-CHAIN",
+      "slug": "recipe-mcp-observability-logpush-hash-chain",
+      "title": "Observability, OpenTelemetry, Sentry, Datadog & Cloudflare Logpush MCP Article 12 Hash-Chain",
+      "family": "logging",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 12, Article 19 & Article 26(6) (Minimum 6-Month Log Retention)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 12",
+        "EU AI Act Art. 19",
+        "EU AI Act Art. 26(6)"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART15-MCP-SANDBOX-CODE-INTERPRETER-ISOLATION",
+      "slug": "recipe-mcp-sandbox-code-interpreter-isolation",
+      "title": "Code Interpreter, E2B, MicroVM & WebAssembly Sandbox MCP Network Egress & Syscall Containment",
+      "family": "security",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 15 & Article 57 (AI Regulatory Sandboxes)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 15",
+        "EU AI Act Art. 57",
+        "ISO/IEC 42001 A.6.2.5"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART10-MCP-ANALYTICS-BI-WAREHOUSE-KANON",
+      "slug": "recipe-mcp-analytics-bi-warehouse-kanon",
+      "title": "Data Warehouse & BI Analytics MCP (Snowflake, BigQuery, Databricks, DuckDB) k-Anonymity & Differential Privacy",
+      "family": "data_gov",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 10(5) & GDPR Article 89 (Statistical Safeguards)",
+      "regulation": "EU AI Act & GDPR",
+      "statutoryAnchors": [
+        "EU AI Act Art. 10(5)",
+        "GDPR Art. 89",
+        "ISO/IEC 42001 A.7.3"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART50-MCP-MEDIA-DOCUMENT-OCR-C2PA-PROVENANCE",
+      "slug": "recipe-mcp-media-document-ocr-c2pa-provenance",
+      "title": "Document OCR, PDF Extraction & Media Processing MCP (FFmpeg, Whisper, Vision) C2PA & Integrity Attestation",
+      "family": "transparency",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 50(2) & Article 10",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 50(2)",
+        "EU AI Act Art. 10",
+        "C2PA 2.1 Standard"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART9-MCP-PROMPT-SHIELD-JAILBREAK-CONTAINMENT",
+      "slug": "recipe-mcp-prompt-shield-jailbreak-containment",
+      "title": "MCP Gateway Prompt-Injection Shield, Indirect Jailbreak Detection & Zero-Debit Containment Receipt",
+      "family": "risk",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 9 (Risk Management System) & Article 15(5)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 9",
+        "EU AI Act Art. 15(5)",
+        "NIST AI RMF MANAGE 2.4"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART9-MCP-MEMORY-KNOWLEDGE-GRAPH-DRIFT-GUARD",
+      "slug": "recipe-mcp-memory-knowledge-graph-drift-guard",
+      "title": "Agentic Long-Term Memory & Knowledge Graph MCP (Neo4j, Mem0, Zep, Graphiti) Poisoning & Drift Guard",
+      "family": "risk",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 9 & Article 15(4) (Feedback Loop Poisoning Resilience)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 9",
+        "EU AI Act Art. 15(4)",
+        "GDPR Art. 16-17"
+      ]
+    },
+    {
+      "id": "RECIPE-DE-BSI-BAFIN-MARISK-BANKING-AI-AUDIT",
+      "slug": "recipe-de-bsi-bafin-marisk-banking-ai-audit",
+      "title": "Germany BaFin MaRisk AT 4.3.2, BSI AIC4 & Works Council (BetrVG §87) Banking & Enterprise AI Governance",
+      "family": "risk",
+      "sector": "Banking & FinTech",
+      "primaryJurisdiction": "DE",
+      "article": "BaFin MaRisk AT 4.3.2, BSI AIC4 & EU AI Act Art. 9 / Annex III 5(b)",
+      "regulation": "German KWG / BaFin Supervisory Circular & Regulation (EU) 2024/1689",
+      "statutoryAnchors": [
+        "BaFin MaRisk AT 4.3.2",
+        "BSI AIC4",
+        "BetrVG Sec. 87(1) No. 6",
+        "EU AI Act Art. 9"
+      ]
+    },
+    {
+      "id": "RECIPE-FR-CNIL-DGCCRF-TRAINING-CORPUS-AND-HR-CSE",
+      "slug": "recipe-fr-cnil-dgccrf-training-corpus-and-hr-cse",
+      "title": "France CNIL AI Recommendations, Code du Travail L2312-8 (CSE) & DGCCRF Algorithmic Transparency",
+      "family": "data_gov",
+      "sector": "Employment & HRTech",
+      "primaryJurisdiction": "FR",
+      "article": "CNIL AI Sheets 1-10, GDPR Art. 6/22 & EU AI Act Art. 10",
+      "regulation": "Loi Informatique et Libertes (No. 78-17) & Regulation (EU) 2024/1689",
+      "statutoryAnchors": [
+        "CNIL AI Recommendations 2024",
+        "Code du travail Art. L2312-8",
+        "EU AI Act Art. 10"
+      ]
+    },
+    {
+      "id": "RECIPE-IT-GARANTE-LAW132-HEALTHCARE-PROFESSIONAL-RESERVE",
+      "slug": "recipe-it-garante-law132-healthcare-professional-reserve",
+      "title": "Italy National AI Law (DDL 132/2025), Garante Privacy & AgID Healthcare / Professional Reserve Oversight",
+      "family": "oversight",
+      "sector": "Healthcare & MedTech",
+      "primaryJurisdiction": "IT",
+      "article": "Italian AI Law Art. 7 (Healthcare) & Art. 12 (Intellectual Professions) + EU AI Act Art. 14",
+      "regulation": "Italian Law on Artificial Intelligence (2025) & GDPR",
+      "statutoryAnchors": [
+        "Italian AI Law (DDL IA 2025) Art. 7-14",
+        "Garante Privacy Provvedimenti",
+        "EU AI Act Art. 14"
+      ]
+    },
+    {
+      "id": "RECIPE-BE-BOSA-FSMA-TRILINGUAL-PUBLIC-FINANCE-GOVERNANCE",
+      "slug": "recipe-be-bosa-fsma-trilingual-public-finance-governance",
+      "title": "Belgium FPS BOSA, FSMA/NBB & Book VI Economic Law Trilingual (NL/FR/DE) Public & Financial AI",
+      "family": "transparency",
+      "sector": "Public Sector & Utilities",
+      "primaryJurisdiction": "BE",
+      "article": "EU AI Act Art. 27/50 & Belgian FPS BOSA / FSMA Algorithmic Guidelines",
+      "regulation": "Regulation (EU) 2024/1689 & Belgian Code of Economic Law",
+      "statutoryAnchors": [
+        "FPS BOSA AI Circular",
+        "Belgian Code of Economic Law Book VI",
+        "EU AI Act Art. 27 & 50"
+      ]
+    },
+    {
+      "id": "RECIPE-US-NIST-RMF-OMB-M24-10-FEDERAL-ENTERPRISE-PACK",
+      "slug": "recipe-us-nist-rmf-omb-m24-10-federal-enterprise-pack",
+      "title": "United States NIST AI RMF 1.0, GenAI Profile (NIST AI 600-1) & FTC Section 5 Enterprise Assurance Pack",
+      "family": "risk",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "US",
+      "article": "NIST AI RMF GOVERN 1.1, MAP 1.5, MEASURE 2.5, MANAGE 3.1 & 15 U.S.C. § 45",
+      "regulation": "NIST AI RMF 1.0 / NIST AI 600-1 & FTC Act Section 5",
+      "statutoryAnchors": [
+        "NIST AI 100-1 (AI RMF 1.0)",
+        "NIST AI 600-1 GenAI Profile",
+        "FTC Act Section 5"
+      ]
+    },
+    {
+      "id": "RECIPE-CO-SB24-205-CONSEQUENTIAL-DECISION-IMPACT-PACK",
+      "slug": "recipe-co-sb24-205-consequential-decision-impact-pack",
+      "title": "Colorado AI Act (SB 24-205 & SB 21-169): High-Risk Consequential Decision Impact Assessment & Adverse Notice",
+      "family": "fairness",
+      "sector": "Insurance & Underwriting",
+      "primaryJurisdiction": "CO",
+      "article": "C.R.S. § 6-1-1702 (Developer Duties) & § 6-1-1703 (Deployer Impact Assessments)",
+      "regulation": "Colorado Consumer Protections for Artificial Intelligence Act (SB 24-205)",
+      "statutoryAnchors": [
+        "Colorado SB 24-205 (C.R.S. § 6-1-1701)",
+        "Colorado SB 21-169",
+        "EU AI Act Annex III(5)"
+      ]
+    },
+    {
+      "id": "RECIPE-UK-FCA-PRA-SS1-23-AISI-MODEL-RISK-GOVERNANCE",
+      "slug": "recipe-uk-fca-pra-ss1-23-aisi-model-risk-governance",
+      "title": "United Kingdom FCA Consumer Duty, Bank of England PRA SS1/23 Model Risk & UK AISI Frontier Safety",
+      "family": "risk",
+      "sector": "Banking & FinTech",
+      "primaryJurisdiction": "UK",
+      "article": "PRA SS1/23 Principles 1-5, FCA PRIN 2A & UK GDPR Art. 22",
+      "regulation": "Bank of England PRA Supervisory Statement SS1/23 & FCA Handbook",
+      "statutoryAnchors": [
+        "PRA SS1/23 Model Risk Management",
+        "FCA Consumer Duty (PRIN 2A)",
+        "UK DSIT 5 Principles"
+      ]
+    },
+    {
+      "id": "RECIPE-GLOBAL-ISO42001-AIMS-CLAUSE-4-10-CERTIFICATION-PREP",
+      "slug": "recipe-global-iso42001-aims-clause-4-10-certification-prep",
+      "title": "Global ISO/IEC 42001:2023 AIMS Clauses 4–10, Annex A Statement of Applicability (SoA) & Continuous Audit Pack",
+      "family": "logging",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "GLOBAL",
+      "article": "ISO/IEC 42001:2023 Clauses 6.1.2 (Risk), 6.1.3 (Impact), 8 (Operation) & Annex A",
+      "regulation": "ISO/IEC 42001:2023 Information Technology — Artificial Intelligence — Management System",
+      "statutoryAnchors": [
+        "ISO/IEC 42001:2023 Clauses 4-10",
+        "ISO/IEC 42001 Annex A.2-A.10",
+        "ISO/IEC 23894 Risk"
+      ]
+    },
+    {
+      "id": "RECIPE-NYC-US-EEOC-ALGORITHMIC-VIDEO-INTERVIEW-FAIRNESS",
+      "slug": "recipe-nyc-us-eeoc-algorithmic-video-interview-fairness",
+      "title": "NYC Local Law 144, EEOC Title VII & EU AI Act Art. 5(1)(f): Video Interview, Voice & Workplace Emotion Ban",
+      "family": "fairness",
+      "sector": "Employment & HRTech",
+      "primaryJurisdiction": "NYC",
+      "article": "EU AI Act Art. 5(1)(f) (Workplace Emotion Prohibition), NYC LL144 & 42 U.S.C. § 12112 (ADA)",
+      "regulation": "Regulation (EU) 2024/1689 Art. 5(1)(f) & NYC Admin. Code § 20-871",
+      "statutoryAnchors": [
+        "NYC Local Law 144",
+        "EU AI Act Art. 5(1)(f)",
+        "EEOC Title VII & ADA Guidance"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART12-AUTOMOTIVE-FLEET-TELEMATICS-BLACKBOX-LOGGING",
+      "slug": "recipe-eu-art12-automotive-fleet-telematics-blackbox-logging",
+      "title": "Automotive, Aviation & Fleet Mobility AI: EU AI Act Art. 12, UNECE WP.29 R155 CSMS & Telemetry Black-Box",
+      "family": "logging",
+      "sector": "Automotive & Mobility",
+      "primaryJurisdiction": "EU",
+      "article": "EU AI Act Article 12 & UNECE WP.29 Regulations R155 / R156",
+      "regulation": "Regulation (EU) 2024/1689 & UNECE R155 Cybersecurity Management System",
+      "statutoryAnchors": [
+        "EU AI Act Art. 12",
+        "UNECE Regulation No. 155 (CSMS)",
+        "UNECE Regulation No. 156 (SUMS)"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART9-CRITICAL-INFRASTRUCTURE-ENERGY-GRID-SAFETY",
+      "slug": "recipe-eu-art9-critical-infrastructure-energy-grid-safety",
+      "title": "EU AI Act Annex III Point 2 & NIS2: Critical Infrastructure, Smart Grid, Water & Utilities AI Safety Interlock",
+      "family": "risk",
+      "sector": "Public Sector & Utilities",
+      "primaryJurisdiction": "EU",
+      "article": "Annex III Point 2 (Critical Infrastructure) & Articles 9, 14, 15 + NIS2 Art. 21",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689) & NIS2 Directive",
+      "statutoryAnchors": [
+        "EU AI Act Annex III(2)",
+        "EU AI Act Art. 9 & 15",
+        "Directive (EU) 2022/2555 (NIS2)"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-MDR-IVDR-CLINICAL-DECISION-SUPPORT-TRIAGE",
+      "slug": "recipe-eu-mdr-ivdr-clinical-decision-support-triage",
+      "title": "Healthcare & MedTech: EU AI Act Annex I/III, MDR 2017/745 & IVDR Clinical Decision Support Oversight",
+      "family": "oversight",
+      "sector": "Healthcare & MedTech",
+      "primaryJurisdiction": "EU",
+      "article": "EU AI Act Art. 6(1), Art. 14 & MDR 2017/745 Annex I (GSPR)",
+      "regulation": "Regulation (EU) 2024/1689 & Medical Device Regulation (EU) 2017/745",
+      "statutoryAnchors": [
+        "EU AI Act Art. 6(1) & Annex I",
+        "Regulation (EU) 2017/745 (MDR)",
+        "MDCG 2019-11 Software"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-DORA-PSD3-BANKING-FRAUD-AML-EXPLAINABILITY",
+      "slug": "recipe-eu-dora-psd3-banking-fraud-aml-explainability",
+      "title": "Banking & FinTech: EU DORA (2022/2554), AMLR & EBA ICT Risk AI Fraud & AML Account-Freeze Guard",
+      "family": "security",
+      "sector": "Banking & FinTech",
+      "primaryJurisdiction": "EU",
+      "article": "DORA Art. 5-16 (ICT Risk), GDPR Art. 22 & EU AI Act Art. 14/15",
+      "regulation": "Regulation (EU) 2022/2554 (DORA) & Regulation (EU) 2024/1689",
+      "statutoryAnchors": [
+        "Regulation (EU) 2022/2554 (DORA)",
+        "EU AI Act Annex III 5(b)",
+        "GDPR Art. 22"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART27-PUBLIC-SECTOR-CITIZEN-BENEFITS-FRIA",
+      "slug": "recipe-eu-art27-public-sector-citizen-benefits-fria",
+      "title": "Public Sector & Welfare Eligibility: EU AI Act Art. 27 Fundamental Rights Impact Assessment (FRIA) & Annex III 5(a)",
+      "family": "fairness",
+      "sector": "Public Sector & Utilities",
+      "primaryJurisdiction": "EU",
+      "article": "Article 27 (Fundamental Rights Impact Assessment) & Annex III Point 5(a)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 27",
+        "EU AI Act Annex III 5(a)",
+        "EU AI Act Art. 49 Registration"
+      ]
+    },
+    {
+      "id": "RECIPE-US-HIPAA-FDA-PCCPS-CLINICAL-RAG-PHI-ZERO-EGRESS",
+      "slug": "recipe-us-hipaa-fda-pccps-clinical-rag-phi-zero-egress",
+      "title": "US HIPAA Safe Harbor (45 CFR §164.514), FDA PCCP & ONC HTI-1 Clinical RAG PHI De-Identification & Audit",
+      "family": "data_gov",
+      "sector": "Healthcare & MedTech",
+      "primaryJurisdiction": "US",
+      "article": "45 CFR § 164.514 (Safe Harbor De-Identification) & ONC HTI-1 b(11) Decision Support Interventions",
+      "regulation": "US HIPAA Privacy/Security Rule & HHS ONC HTI-1 Final Rule",
+      "statutoryAnchors": [
+        "HIPAA 45 CFR § 164.514(b)",
+        "ONC HTI-1 DSI Rules (45 CFR § 170.315(b)(11))",
+        "FDA PCCP Guidance"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART55-FRONTIER-SYSTEMIC-RISK-GPAI-REDTEAM",
+      "slug": "recipe-eu-art55-frontier-systemic-risk-gpai-redteam",
+      "title": "EU AI Act Article 55 & GPAI Code of Practice: Frontier Model Systemic Risk (>10^25 FLOPs) Adversarial Red-Teaming",
+      "family": "gpai",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 51 & Article 55 (Obligations for Providers of GPAI Models with Systemic Risk)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 51",
+        "EU AI Act Art. 55(1)(a)-(d)",
+        "EU GPAI Code of Practice"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART53-LOCAL-VLLM-OLLAMA-ZERO-EGRESS-SYNTHESIS",
+      "slug": "recipe-eu-art53-local-vllm-ollama-zero-egress-synthesis",
+      "title": "Open-Weights Local Inference (Ollama, vLLM, TGI, llama.cpp): Sovereign Zero-Egress Synthesis & Weight Attestation",
+      "family": "gpai",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "EU AI Act Art. 15/53 & GDPR Art. 25 (Data Protection by Design and Default)",
+      "regulation": "Regulation (EU) 2024/1689 & GDPR",
+      "statutoryAnchors": [
+        "EU AI Act Art. 53",
+        "EU AI Act Art. 15",
+        "GDPR Art. 25 & Art. 44 (Zero Third-Country Transfer)"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART10-MULTIMODAL-VISION-AUDIO-BIOMETRIC-GUARD",
+      "slug": "recipe-eu-art10-multimodal-vision-audio-biometric-guard",
+      "title": "Multimodal Vision, Audio & Biometric Categorization: EU AI Act Art. 5(1)(g), Art. 10 & Annex III(1) Interlock",
+      "family": "fairness",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "EU",
+      "article": "Article 5(1)(g) (Prohibited Sensitive Biometric Categorization) & Annex III Point 1",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+      "statutoryAnchors": [
+        "EU AI Act Art. 5(1)(g)-(h)",
+        "EU AI Act Annex III(1)",
+        "EU AI Act Art. 10"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART14-MULTI-AGENT-SWARM-DELEGATION-CONTAINMENT",
+      "slug": "recipe-eu-art14-multi-agent-swarm-delegation-containment",
+      "title": "Multi-Agent Swarms (AutoGen, CrewAI, LangGraph, Agents SDK): Proof-of-Agent-Authority & Recursion Cap",
+      "family": "oversight",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "GLOBAL",
+      "article": "EU AI Act Art. 14/15 & Singapore IMDA Agentic AI Governance Framework (2025)",
+      "regulation": "Regulation (EU) 2024/1689 & IMDA Model AI Governance Framework for Agentic AI",
+      "statutoryAnchors": [
+        "EU AI Act Art. 14",
+        "EU AI Act Art. 15",
+        "IMDA Agentic AI Framework Dimension 4"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART15-FINTECH-ALGORITHMIC-TRADING-CIRCUIT-BREAKER",
+      "slug": "recipe-eu-art15-fintech-algorithmic-trading-circuit-breaker",
+      "title": "FinTech & Quantitative Execution: MiFID II Art. 17, UK FCA MAR & EU AI Act Art. 15 Circuit-Breaker Interlock",
+      "family": "security",
+      "sector": "Banking & FinTech",
+      "primaryJurisdiction": "UK",
+      "article": "MiFID II Art. 17, Commission Delegated Regulation (EU) 2017/589 (RTS 6) & EU AI Act Art. 15",
+      "regulation": "Directive 2014/65/EU (MiFID II), UK FCA MAR & Regulation (EU) 2024/1689",
+      "statutoryAnchors": [
+        "MiFID II Art. 17 (Directive 2014/65/EU)",
+        "RTS 6 Algorithmic Trading",
+        "EU AI Act Art. 15"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART10-INSURANCE-CLAIMS-VISION-TELEMATICS-FRAUD",
+      "slug": "recipe-eu-art10-insurance-claims-vision-telematics-fraud",
+      "title": "Insurance Claims & Telematics Triage: EIOPA AI Governance, EU AI Act Art. 13/14 & Computer Vision Explainability",
+      "family": "transparency",
+      "sector": "Insurance & Underwriting",
+      "primaryJurisdiction": "EU",
+      "article": "EU AI Act Art. 13/14, GDPR Art. 22 & EIOPA Digitalisation Report",
+      "regulation": "Regulation (EU) 2024/1689 & Solvency II / IDD Supervisory Guidance",
+      "statutoryAnchors": [
+        "EU AI Act Art. 13 & Art. 14",
+        "EIOPA AI Governance Principles",
+        "Colorado SB 24-205"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART14-AUTOMOTIVE-ADAS-IN-CABIN-DRIVER-MONITORING",
+      "slug": "recipe-eu-art14-automotive-adas-in-cabin-driver-monitoring",
+      "title": "Automotive In-Cabin DMS & ADAS Handover: EU General Safety Regulation (GSR2 2019/2144) & EU AI Act Art. 5(1)(f) Exception",
+      "family": "oversight",
+      "sector": "Automotive & Mobility",
+      "primaryJurisdiction": "DE",
+      "article": "EU AI Act Art. 5(1)(f) (Medical/Safety Exception), Art. 14 & Regulation (EU) 2019/2144 (GSR2)",
+      "regulation": "Regulation (EU) 2024/1689 & EU General Safety Regulation (GSR2)",
+      "statutoryAnchors": [
+        "Regulation (EU) 2019/2144 (GSR2)",
+        "EU AI Act Art. 5(1)(f) Safety Exception",
+        "EU AI Act Art. 14"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART10-SYNTHETIC-TABULAR-CLINICAL-DATASET-PRIVACY",
+      "slug": "recipe-eu-art10-synthetic-tabular-clinical-dataset-privacy",
+      "title": "European Health Data Space (EHDS), CNIL & EU AI Act Art. 10(5): Synthetic Clinical & Financial Tabular Dataset Privacy",
+      "family": "data_gov",
+      "sector": "Healthcare & MedTech",
+      "primaryJurisdiction": "FR",
+      "article": "EU AI Act Art. 10(2)-(5) & EHDS Secondary Use Safeguards (Chapter IV)",
+      "regulation": "Regulation (EU) 2024/1689 & EHDS Regulation (EU) 2025/327",
+      "statutoryAnchors": [
+        "EU AI Act Art. 10(5)",
+        "European Health Data Space (EHDS) Regulation",
+        "GDPR Art. 89"
+      ]
+    },
+    {
+      "id": "RECIPE-EU-ART12-COMPOUND-ENTERPRISE-AI-STACK-ATTESTATION",
+      "slug": "recipe-eu-art12-compound-enterprise-ai-stack-attestation",
+      "title": "Compound AI Systems & Multi-Component Stacks: EU AI Act Art. 12/25 Supply-Chain Merkle Attestation & Drift Gate",
+      "family": "logging",
+      "sector": "Cross-Sector",
+      "primaryJurisdiction": "GLOBAL",
+      "article": "Article 12 & Article 25 (Responsibilities Along the AI Value Chain)",
+      "regulation": "EU AI Act (Regulation (EU) 2024/1689) & ISO/IEC 42001 Annex A.10",
+      "statutoryAnchors": [
+        "EU AI Act Art. 12",
+        "EU AI Act Art. 25 (Value Chain Responsibilities)",
+        "ISO/IEC 42001 A.10"
+      ]
+    }
+  ]
+}

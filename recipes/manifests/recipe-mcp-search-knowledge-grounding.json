@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART13-MCP-SEARCH-KNOWLEDGE-GROUNDING",
+  "slug": "recipe-mcp-search-knowledge-grounding",
+  "title": "Web Search, Research & Knowledge Discovery MCP (Exa, Tavily, Brave, ArXiv) Source Corroboration",
+  "family": "transparency",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 13 & Article 50",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 13",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 13",
+    "EU AI Act Art. 50",
+    "NIST AI RMF MEASURE 2.5"
+  ],
+  "coreObligation": "Search-augmented AI agents must attribute external sources transparently and prevent fabricated legal or factual citations.",
+  "defaultNotChecked": [
+    "Editorial factual accuracy of external third-party news outlets",
+    "Paywalled academic journal peer-review retract latency"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_verify_citations",
+      "description": "Corroborate search snippets and verify external URL citation digests.",
+      "requiredParams": [
+        "claimId",
+        "sourceUrl",
+        "snippetHash"
+      ]
+    }
+  ]
+}

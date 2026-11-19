@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART9-MCP-PROMPT-SHIELD-JAILBREAK-CONTAINMENT",
+  "slug": "recipe-mcp-prompt-shield-jailbreak-containment",
+  "title": "MCP Gateway Prompt-Injection Shield, Indirect Jailbreak Detection & Zero-Debit Containment Receipt",
+  "family": "risk",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 9 (Risk Management System) & Article 15(5)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 9 & Art. 15(5)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 9",
+    "EU AI Act Art. 15(5)",
+    "NIST AI RMF MANAGE 2.4"
+  ],
+  "coreObligation": "Continuous iterative risk management under Article 9 requires active runtime detection and containment of adversarial manipulation attempts.",
+  "defaultNotChecked": [
+    "Zero-day multilingual steganographic base64 cipher variants prior to signature update",
+    "Direct model API calls bypassing Cloudflare AI Gateway / VOS Firewall"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "proof_issue_containment_receipt",
+      "description": "Halt adversarial tool chain and emit zero-debit cryptographic containment receipt.",
+      "requiredParams": [
+        "traceId",
+        "clefScore",
+        "blockedToolName"
+      ]
+    }
+  ]
+}

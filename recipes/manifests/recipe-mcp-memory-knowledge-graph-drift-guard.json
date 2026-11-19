@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART9-MCP-MEMORY-KNOWLEDGE-GRAPH-DRIFT-GUARD",
+  "slug": "recipe-mcp-memory-knowledge-graph-drift-guard",
+  "title": "Agentic Long-Term Memory & Knowledge Graph MCP (Neo4j, Mem0, Zep, Graphiti) Poisoning & Drift Guard",
+  "family": "risk",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 9 & Article 15(4) (Feedback Loop Poisoning Resilience)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 15(4)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 9",
+    "EU AI Act Art. 15(4)",
+    "GDPR Art. 16-17"
+  ],
+  "coreObligation": "AI systems that continue to learn or update persistent memory after deployment must mitigate biased or poisoned feedback loops under Art. 15(4).",
+  "defaultNotChecked": [
+    "Subjective human user belief contradictions entered intentionally by account owner",
+    "Hardware ECC RAM bit-flip on unauthenticated local edge device"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_calculate_residual_risk",
+      "description": "Score persistent memory graph mutation risk and provenance trust tier.",
+      "requiredParams": [
+        "memoryNamespace",
+        "sourceTrustTier",
+        "nodeDigest"
+      ]
+    }
+  ]
+}

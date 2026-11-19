@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART10-INSURANCE-CLAIMS-VISION-TELEMATICS-FRAUD",
+  "slug": "recipe-eu-art10-insurance-claims-vision-telematics-fraud",
+  "title": "Insurance Claims & Telematics Triage: EIOPA AI Governance, EU AI Act Art. 13/14 & Computer Vision Explainability",
+  "family": "transparency",
+  "sector": "Insurance & Underwriting",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "EU AI Act Art. 13/14, GDPR Art. 22 & EIOPA Digitalisation Report",
+    "regulation": "Regulation (EU) 2024/1689 & Solvency II / IDD Supervisory Guidance",
+    "citation": "EIOPA AI Governance Report & EU AI Act Art. 13",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 13 & Art. 14",
+    "EIOPA AI Governance Principles",
+    "Colorado SB 24-205"
+  ],
+  "coreObligation": "InsurTech claims-triage and damage-estimation AI must never autonomously deny a policyholder claim without human adjuster review and transparent explanation.",
+  "defaultNotChecked": [
+    "Licensed physical auto-body shop structural frame measurement",
+    "Police traffic accident report wet-ink officer signature"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "insureai_route_to_vos_record",
+      "description": "Route insurance claim AI assessment and human adjuster sign-off into VOS notarial ledger.",
+      "requiredParams": [
+        "claimId",
+        "adjusterId",
+        "adverseActionBlocked"
+      ]
+    }
+  ]
+}

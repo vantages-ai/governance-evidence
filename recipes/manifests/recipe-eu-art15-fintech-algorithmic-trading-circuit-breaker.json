@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART15-FINTECH-ALGORITHMIC-TRADING-CIRCUIT-BREAKER",
+  "slug": "recipe-eu-art15-fintech-algorithmic-trading-circuit-breaker",
+  "title": "FinTech & Quantitative Execution: MiFID II Art. 17, UK FCA MAR & EU AI Act Art. 15 Circuit-Breaker Interlock",
+  "family": "security",
+  "sector": "Banking & FinTech",
+  "primaryJurisdiction": "UK",
+  "legalBasis": {
+    "article": "MiFID II Art. 17, Commission Delegated Regulation (EU) 2017/589 (RTS 6) & EU AI Act Art. 15",
+    "regulation": "Directive 2014/65/EU (MiFID II), UK FCA MAR & Regulation (EU) 2024/1689",
+    "citation": "RTS 6 Art. 12 (Kill Functionality) & Art. 15 (Pre-Trade Controls)",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "MiFID II Art. 17 (Directive 2014/65/EU)",
+    "RTS 6 Algorithmic Trading",
+    "EU AI Act Art. 15"
+  ],
+  "coreObligation": "Algorithmic trading and treasury execution systems must maintain pre-trade risk limits and an immediate emergency kill-switch capable of cancelling all unexecuted orders.",
+  "defaultNotChecked": [
+    "Exchange central limit order book (CLOB) matching engine hardware clock drift",
+    "Counterparty clearing house intraday margin call wire settlement"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "proof_issue_containment_receipt",
+      "description": "Trigger RTS 6 Art. 12 emergency kill-switch and emit cryptographic containment receipt.",
+      "requiredParams": [
+        "strategyId",
+        "breachedCollar",
+        "cancelledOrdersCount"
+      ]
+    }
+  ]
+}

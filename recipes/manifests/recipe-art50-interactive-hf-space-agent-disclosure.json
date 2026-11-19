@@ -1,0 +1,35 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART50-INTERACTIVE-HF-SPACE-AGENT-DISCLOSURE",
+  "slug": "recipe-art50-interactive-hf-space-agent-disclosure",
+  "title": "EU AI Act Article 50 & Article 14: Interactive Hugging Face Space & Generative Media Sandbox Disclosure",
+  "family": "transparency",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 50(1)-(4)",
+    "regulation": "EU AI Act (Regulation (EU) 2024/1689)",
+    "citation": "Regulation (EU) 2024/1689 Art. 50",
+    "effectiveDate": "2026-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 50(1)",
+    "EU AI Act Art. 50(2)",
+    "EU AI Act Art. 14"
+  ],
+  "coreObligation": "Providers of generative audio, image, video, or text sandboxes must ensure outputs are marked in a machine-readable format and detectable as AI-generated.",
+  "defaultNotChecked": [
+    "End-user downstream redistribution of generated synthetic images after download",
+    "Third-party GPU ZeroGPU community queue tenant isolation hardware attestation"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_issue_seal",
+      "description": "Bind synthetic media watermark policy and Article 50 disclosure to interactive Space.",
+      "requiredParams": [
+        "appId",
+        "manifestHash"
+      ]
+    }
+  ]
+}

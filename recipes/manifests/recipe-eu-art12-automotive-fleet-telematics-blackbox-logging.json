@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART12-AUTOMOTIVE-FLEET-TELEMATICS-BLACKBOX-LOGGING",
+  "slug": "recipe-eu-art12-automotive-fleet-telematics-blackbox-logging",
+  "title": "Automotive, Aviation & Fleet Mobility AI: EU AI Act Art. 12, UNECE WP.29 R155 CSMS & Telemetry Black-Box",
+  "family": "logging",
+  "sector": "Automotive & Mobility",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "EU AI Act Article 12 & UNECE WP.29 Regulations R155 / R156",
+    "regulation": "Regulation (EU) 2024/1689 & UNECE R155 Cybersecurity Management System",
+    "citation": "UNECE R155 Annex 5 & EU AI Act Art. 12",
+    "effectiveDate": "2024-07-01"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 12",
+    "UNECE Regulation No. 155 (CSMS)",
+    "UNECE Regulation No. 156 (SUMS)"
+  ],
+  "coreObligation": "Connected mobility and fleet AI systems must maintain cryptographic OTA software/model version lineage and tamper-evident event logs.",
+  "defaultNotChecked": [
+    "Physical CAN-bus wiring harness splicing inside aftermarket repair shops",
+    "Satellite GNSS ionospheric scintillation signal delay"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "hdfl_verify_log_hash_chain",
+      "description": "Verify UNECE R155/R156 OTA model version and fleet black-box telemetry hash chain.",
+      "requiredParams": [
+        "fleetId",
+        "rxswinDigest",
+        "logBatchMerkleRoot"
+      ]
+    }
+  ]
+}

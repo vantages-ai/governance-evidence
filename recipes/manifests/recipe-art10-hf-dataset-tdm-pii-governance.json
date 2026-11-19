@@ -1,0 +1,36 @@
+{
+  "schema": "vos.cookbook_recipe_manifest.v1",
+  "id": "RECIPE-EU-ART10-HF-DATASET-TDM-PII-GOVERNANCE",
+  "slug": "recipe-art10-hf-dataset-tdm-pii-governance",
+  "title": "EU AI Act Article 10 & Article 53: Hugging Face Dataset TDM Opt-Out, PII Scrubbing & Benchmark Provenance",
+  "family": "data_gov",
+  "sector": "Cross-Sector",
+  "primaryJurisdiction": "EU",
+  "legalBasis": {
+    "article": "Article 10(2)-(5) & DSM Directive Art. 4",
+    "regulation": "EU AI Act & Directive (EU) 2019/790",
+    "citation": "Regulation (EU) 2024/1689 Art. 10",
+    "effectiveDate": "2025-08-02"
+  },
+  "statutoryAnchors": [
+    "EU AI Act Art. 10(2)-(5)",
+    "EU AI Act Art. 53(1)(c)",
+    "EU DSM Directive Art. 4 TDM"
+  ],
+  "coreObligation": "Training, validation, and testing datasets must be subject to documented data governance, bias examination, and copyright TDM compliance.",
+  "defaultNotChecked": [
+    "Individual data-subject GDPR consent withdrawal verification in third-party community mirrors",
+    "Full row-by-row biometric image/audio face-blurring verification across external shards"
+  ],
+  "mcpTools": [
+    {
+      "toolName": "acta_export_redaction_pack",
+      "description": "Generate PII scrubbing and Croissant 1.0 provenance receipt for dataset shards.",
+      "requiredParams": [
+        "datasetId",
+        "croissantSha256",
+        "redactionPolicy"
+      ]
+    }
+  ]
+}
